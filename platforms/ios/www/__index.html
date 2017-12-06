@@ -1,0 +1,1460 @@
+<html><head><meta charset="utf-8">
+<style>
+/*
+00adef
+000
+2e3192
+2e3192 jaune
+*/
+
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family:arial;
+}
+.page{
+  padding: 10px;
+}
+ul{
+  padding:30px;
+}
+.page *{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+*{
+  font-size:17px;
+}
+.big_blue{
+  color:#2e3192;
+  font-weight:bolder;
+  font-size:40px;
+  padding: 0px;
+  margin: 20px;
+}
+.normal_dark{
+  color:#000;
+  font-weight:bold;
+  font-size:20px;
+  padding: 0px;
+}
+.ul_no{
+  list-style-type: numeric;
+}
+.ul_sp{
+  list-style-type: none;
+}
+.ul_tiret{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.ul_tiret li:before{
+  content:"- ";
+}
+.content1{
+  background-color: #00adef;
+
+}
+
+table{
+  border-collapse:collapse;
+}
+table th,
+table td{
+  border:1px solid #000;
+  border-collapse:collapse;
+  padding:5px;
+  min-width:50px;
+}
+.header_part{
+  background-color: #000;
+  text-align: center;
+  height: 15px;
+  display: block;
+  padding:0px;
+  margin-bottom: 50px;
+}
+.header_step{
+  background-color: #00adef;
+  color:#FFF;
+  font-weight: bold;
+  padding: 5px 20px;
+  display: inline-block;
+  width:100px;
+  height:20px;
+}
+
+
+.nav{
+  vertical-align: middle;
+  position: relative;
+}
+.icone{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+}
+.menu{
+  vertical-align: middle;
+  display: inline-block;
+  width: 60%;
+  position: absolute;
+  right: 0px;
+}
+.menu ul{
+  display: inline-block;
+}
+.menu ul li{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+.blue_bg{
+  background-color: #00adef;
+  padding: 20px;
+  min-height: 200px;
+}
+.normal_white{
+  font-size: 20px;
+  color: #FFF;
+  padding-left: 50px;
+}
+
+.normal_blue{
+  color: #2e3192;
+  
+}
+.no{
+  border: 1px solid #fff200;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fff200;
+  margin-right: 10px;
+  font-size:10px;
+  text-align: center;
+  padding: 0px;
+}
+.little_white{
+  font-size: 12px;
+  color:#FFF;
+  padding-left: 50px;
+}
+.little_white label{
+  display: inline-block;
+  width: 250px;
+  max-width: 110%;
+}
+.page_add .little_white{
+  padding-left: 0px;
+} 
+.input_group{
+  display: inline-block;
+  vertical-align: top;
+}
+.ul_tiret li{
+  padding-left: 40px;
+}
+select{
+  display: inline-block;
+  width: 250px;
+  max-width: 110%;
+  text-align: center;
+}
+input:not([type="checkbox"]){
+  display: inline-block;
+  width: 250px;
+  max-width: 110%;
+}
+input:not([type]),
+input:not([type="text"]){
+  padding-top:0px;
+  padding-bottom:0px;
+}
+.blue_bg.page_add *{
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+}
+.page{
+  height: 90%;
+  position: relative;
+  overflow: auto;
+}
+.blue_bg{
+  width: 50%;
+  position: relative;
+}
+.blue_bg:after{
+  content:" ";
+  position: absolute;
+  top:0px;
+  left: 100%;
+  height: 100%;
+  width: 100px;
+  background-size: 100% 100%;
+  background-image: url("blue_right.png");
+}
+.content{
+position: relative;
+height: 60%;
+}
+
+.page{
+  display:none;
+}
+.page.display{
+  display:block;
+}
+.little_white.r_button{
+cursor:pointer;
+display: inline-block;
+margin: 5px;
+position: absolute;
+right: -53%;
+bottom: -21px;
+padding: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 32px;
+background-color: #ec008c;
+display: inline-block;
+padding:0px !important;
+}
+.little_white.n_button{
+cursor:pointer;
+  padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+font-size: 34px;
+background-color: #ec008c;
+display: inline-block;
+margin: 10px;
+position: absolute;
+right: -89%;
+bottom: -26px;
+}
+
+
+
+@media screen and (max-width:1100px){
+.nav{
+  display:none;
+}
+
+
+.little_white.r_button{
+  padding: 3px !important;
+font-size: 25px;
+background-color: #ec008c;
+display: inline-block;
+margin: 5px;
+position: relative;
+right: 0px;
+bottom: 1px;
+padding:0px !important;
+}
+.little_white.n_button{
+  padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+font-size: 30px;
+background-color: #ec008c;
+display: inline-block;
+margin: 10px;
+position: relative;
+right: 0px;
+bottom: 0px;
+}
+
+}
+.spl{
+  position:relative !important;
+  top:0px !important;
+  left:0px !important;
+}
+
+.recap1{
+	padding:10px;
+	box-sizing:border-box;
+  background-color: white;
+  position: relative;
+  width: 40%;
+  height: 80%;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.payement{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+@media screen and (max-width:500px){
+.recap1{
+	padding:10px;
+	box-sizing:border-box;
+  background-color: white;
+  position: relative;
+  width: 90%;
+  height: 80%;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.payement{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+
+}
+
+.xlabel{
+	display:inline-block;
+	width:100px;
+}
+
+</style>
+
+
+
+</head><body><div class="page" id="step_0">
+	<div class="header_part">
+		<div class="header_step"></div>
+	</div>
+	<div class="big_blue">Outil de vérification</div>
+
+	<div class="normal_dark">Procédure</div>
+
+	<ul class="ul_sp">
+		<li><span class="no">1</span>Envoi SMS au numéro vert XXX le numéro de la police d’assurance</li>
+		<li>
+
+			<ul class="ul_tiret"><span class="no">2</span>Retour de réponse par SMS avec les mentions suivantes :
+
+
+				<li>Num police d’assurance</li>
+				<li>Nom du propriétaire</li>
+				<li>Num plaque d’immatriculation</li>
+				<li>Type d’assurance</li>
+				<li>Durée</li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="big_blue">Outil de renouvèlement</div>
+
+	<div class="normal_dark">Procédure</div>
+
+	<ul class="ul_sp">
+		<li><span class="no">1</span>Envoi SMS au numéro vert le message suivant :
+			<ul class="ul_tiret">
+				<li>Num police d’assurance #nombre de mois</li>
+				<li>Retour de réponse avec un code d’authentification + montant + durée</li>
+			</ul>
+		</li>
+		<li><span class="no">2</span>Envoi SMS au numéro vert :
+			<ul class="ul_tiret">
+				<li>Num police d’assurance #code d’authetification</li>
+			</ul>
+		</li>
+	</ul>
+
+</div>
+
+<div class="page" id="step_1">
+
+	<div class="header_part">
+		<div class="header_step">ETAPE 1</div>
+	</div>
+
+	<div class="big_blue">Obtenez votre devis</div>
+	<div class="content">
+
+		<div class="nav">
+			<div class="icone"><img src="icone.png"></div>
+			<div class="menu">
+				<ul>
+					<li>Assurance auto</li>
+					<li>Mutuelle santé</li>
+					<li>Assurance habitation</li>
+					<li>Assurance moto</li>
+					<li>Autres assurances</li>
+					<li>Assurances professionnelles</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="present_in" style="position: relative;">
+			<div class="blue_bg">
+				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px;padding-bottom: 0px;width: 80%;overflow: hidden;"><img src="bg1.png" style="padding-top: 0px;min-width: 100%;height: 100%;min-width: 500px;"></div><div class="big_blue">Assurance auto</div>
+				<div class="normal_white">Obtenez votre devis</div>
+
+				<div class="normal_blue"><span class="no"> </span>Renouvellement</div>
+				<div class="little_white">Num police d’assurance</div>
+
+				<div class="normal_blue" id="create"><span class="no"> </span>Création</div>
+			</div>
+			
+		</div>
+
+		<div class="footer">
+			<img src="">
+			<img src="">
+			<img src="">
+			<img src="">
+			<img src="">
+		</div>
+	</div>
+</div>
+
+
+
+<div class="page display" id="step_2">
+
+	<div class="header_part">
+		<div class="header_step">ETAPE 2</div>
+	</div>
+
+	<div class="big_blue">Création du compte</div>
+	<div class="content">
+
+		<div class="nav">
+			<div class="icone"><img src="icone.png"></div>
+			<div class="menu">
+				<ul>
+					<li>Assurance auto</li>
+					<li>Mutuelle santé</li>
+					<li>Assurance habitation</li>
+					<li>Assurance moto</li>
+					<li>Autres assurances</li>
+					<li>Assurances professionnelles</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="present_in">
+			<div class="blue_bg page_add">
+
+				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px !important;padding-bottom: 0px !important;width: 80%;overflow: hidden;"><img style="padding-top: 0px;min-width: 100%;height: 80%;width: 100%;min-width: 500px;" src="bg2.png"></div><div style="position: relative;
+							z-index: 10;">
+
+
+					<div class="big_blue">Création</div>
+
+					<div class="little_white">
+						<label>Nom ou raison sociale :</label>
+						<input>
+					</div>
+					<div class="little_white">
+						<label>Adresse :</label>
+						<input>
+					</div>
+					<div class="little_white">
+						<label>E-mail :</label>
+						<input>
+					</div>
+					<div class="little_white">
+						<label>Tél. :</label>
+						<input>
+					</div>
+					<div class="little_white">
+						<label>Type d’assurance :</label>
+						<span class="input_group">
+						<input type="checkbox">Responsabilité civile<br>
+						<input type="checkbox">Bris de glace<br>
+						<input type="checkbox">Incendie et vol<br>
+						<input type="checkbox">Tout risque<br>
+						</span>
+					</div>
+					<div class="little_white">
+						<label>Type de tarif :</label>
+					<select id="typeVehicule">
+					 <option value="Promenade et Affaire">Promenade et Affaire</option>
+					  <option value="Transport de personne à titre gratuit">Transport de personne à titre gratuit</option>
+					  <option value="Transport de personne à titre payant">Transport de personne à titre payant</option>
+					  <option value="Garagiste et concessionnaires">Garagiste et concessionnaires</option>
+					  <option value="Engins de chantier">Engins de chantier</option>
+					  <option value="Véhicule de Types spéciaux">Véhicule de Types spéciaux</option> </select>
+					</div>
+					<div class="little_white">
+						<label>Période :</label>
+					<select>
+					<option>
+					3 mois</option>
+					<option>
+					6 mois</option>
+					<option>
+					12 mois</option>
+					</select>
+					</div>
+					<div class="little_white">
+						<label>Source :</label>
+					<select id="energie">
+					<option value="Essence">
+					Essence</option>
+					<option value="Diesel">
+					Diesel</option>
+					</select>
+					</div>
+					<div class="little_white">
+						<label>Puissance fiscale :</label>
+					<select id="puissance">
+					<option value="1">1</option>
+ 
+<option value="2">2</option>
+ 
+<option value="3">3</option>
+ 
+<option value="4">4</option>
+ 
+<option value="5">5</option>
+ 
+<option value="6">6</option>
+ 
+<option value="7">7</option>
+ 
+<option value="8">8</option>
+ 
+<option value="9">9</option>
+ 
+<option value="10">10</option>
+ 
+<option value="11">11</option>
+ 
+<option value="12">12</option>
+ 
+<option value="13">13</option>
+ 
+<option value="14">14</option>
+ 
+<option value="15">15</option>
+ 
+<option value="16">16</option>
+ 
+<option value="17">17</option>
+ 
+<option value="18">18</option>
+ 
+<option value="19">19</option>
+ 
+<option value="20">20</option>
+ 
+<option value="21">21</option>
+ 
+<option value="22">22</option>
+ 
+<option value="23">23</option>
+ 
+<option value="24">24</option>
+					</select>
+					</div>
+<div class="little_white r_button" id="rpage_1">&lt; Retour</div><div class="little_white n_button " id="devis">
+						Devis &gt;
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="page" id="step_3">
+
+	<div class="header_part">
+		<div class="header_step">ETAPE 3</div>
+	</div>
+
+	<div class="big_blue">Devis comparatif</div>
+	<div class="content">
+
+		<div class="nav">
+			<div class="icone"><img src="icone.png"></div>
+			<div class="menu">
+				<ul>
+					<li>Assurance auto</li>
+					<li>Mutuelle santé</li>
+					<li>Assurance habitation</li>
+					<li>Assurance moto</li>
+					<li>Autres assurances</li>
+					<li>Assurances professionnelles</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="present_in">
+			<div class="light_blue_bg">
+				<div class="big_blue">Comparatif</div>
+					<table>
+						<thead>
+							<tr>
+								<th>
+									Num. :
+								</th>
+								<th>
+									<img src="ico1.png">
+								</th>
+								<th>
+									<img src="ico2.png">
+								</th>
+								<th>
+									<img src="ico3.png">
+								</th>
+								<th>
+									<img src="ico4.png">
+								</th>
+								<th>
+									<img src="ico5.png">
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Montant
+								</td>
+								<td id="prix_Ny_Havana">
+								</td>
+								<td id="prix_Allianz">
+								</td>
+								<td id="prix_Aro">
+								</td>
+								<td id="prix_Saham">
+								</td>
+								<td id="prix_MAMA">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Durée
+								</td>
+								<td id="periode_Ny_Havana">
+								</td>
+								<td id="periode_Allianz">
+								</td>
+								<td id="periode_Aro">
+								</td>
+								<td id="periode_Saham">
+								</td>
+								<td id="periode_MAMA">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Obs
+								</td>
+								<td>
+								</td>
+								<td>
+								</td>
+								<td>
+								</td>
+								<td>
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Choisir
+								</td>
+								<td>
+									<b id="choix_Ny_Havana">choisir</b>
+								</td>
+								<td>
+									<b id="choix_Allianz">choisir</b>
+								</td>
+								<td>
+									<b id="choix_Aro">choisir</b>
+								</td>
+								<td>
+									<b id="choix_Saham">choisir</b>
+								</td>
+								<td>
+									<b id="choix_MAMA">choisir</b>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
+				</div>
+			</div>
+			<div class="bg_img"><img src=""></div>
+		</div>
+	</div>
+	
+<div class="page" id="step_4">
+
+  <div class="header_part">
+    <div class="header_step">ETAPE 4</div>
+  </div>
+  <div class="big_blue">Récapitulation des infos</div>
+  <div class="content">
+
+    <div class="nav">
+      <div class="icone"><img src="icone.png"></div>
+      <div class="menu">
+        <ul>
+          <li>Assurance auto</li>
+          <li>Mutuelle santé</li>
+          <li>Assurance habitation</li>
+          <li>Assurance moto</li>
+          <li>Autres assurances</li>
+          <li>Assurances professionnelles</li>
+        </ul>
+      </div>
+    </div>
+
+ 
+    <div class="present_in content1">
+      <div class="light_blue_bg">
+        <div class="big_blue">
+  <br><br>Récapitulation<br><br> </div>
+          <div class="recap1 page_add">
+			<div id="recap"></div>
+          </div>
+
+          <div  class="payement normal_white">
+            Mode de paiement : <br><br>
+            Mobile Banking <br>
+            Num Tel : <br><br>
+            Via Paypal<br>
+          </div>
+          <div class="little_white " id="2">Renouvellement automatique: </div>
+        </div>
+      </div>
+	<div class="little_white r_button spl" id="rpage_3">&lt; Retour</div>
+      <div class="bg_img"><img src=""></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	(function(){
+		var data= [
+   {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"1", période:"0", prix:"72910"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"2", période:"0", prix:"72910"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"3", période:"0", prix:"79580"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"4", période:"0", prix:"79580"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"5", période:"0", prix:"79580"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"6", période:"0", prix:"79580"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"7", période:"0", prix:"81420"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"8", période:"0", prix:"81420"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"9", période:"0", prix:"84410"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"10", période:"0", prix:"84410"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"11", période:"0", prix:"87710"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"12", période:"0", prix:"87710"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"13", période:"0", prix:"91310"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"14", période:"0", prix:"91310"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"15", période:"0", prix:"91310"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"16", période:"0", prix:"100970"},   
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"17", période:"0", prix:"100970"},   
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"18", période:"0", prix:"100970"},   
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"19", période:"0", prix:"100970"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"20", période:"0", prix:"107640"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"21", période:"0", prix:"107640"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"22", période:"0", prix:"107640"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"23", période:"0", prix:"107640"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"24", période:"0", prix:"110400"}, 
+
+ { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"2", période:"0", prix:"79580"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"3", période:"0", prix:"79580"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"4", période:"0", prix:"79580"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"5", période:"0", prix:"81420"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"6", période:"0", prix:"84410"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"7", période:"0", prix:"84410"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"8", période:"0", prix:"87710"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"9", période:"0", prix:"91310"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"10", période:"0", prix:"91310"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"11", période:"0", prix:"100970"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"12", période:"0", prix:"100970"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"13", période:"0", prix:"100970"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"14", période:"0", prix:"107640"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"15", période:"0", prix:"107640"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"16", période:"0", prix:"107640"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"17", période:"0", prix:"110400"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"18", période:"0", prix:"110400"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"19", période:"0", prix:"110400"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"20", période:"0", prix:"110400"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"21", période:"0", prix:"110400"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"22", période:"0", prix:"110400"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"23", période:"0", prix:"110400"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"24", période:"0", prix:"110400"},  
+
+
+
+ {  nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"1", période:"0", prix:"109365"},
+  {  nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"2", période:"0", prix:"109365"},
+  {  nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"3", période:"0", prix:"109365"},
+  {  nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"4", période:"0", prix:"109365"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"5", période:"0", prix:"109365"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"6", période:"0", prix:"109365"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"7", période:"0", prix:"122130"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"8", période:"0", prix:"122130"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"9", période:"0", prix:"126615"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"10", période:"0", prix:"126615"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"11", période:"0", prix:"131565"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"12", période:"0", prix:"131565"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"13", période:"0", prix:"136965"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"14", période:"0", prix:"136965"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"15", période:"0", prix:"136965"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"16", période:"0", prix:"151455"},   
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"17", période:"0", prix:"151455"},   
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"18", période:"0", prix:"151455"},   
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"19", période:"0", prix:"151455"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"20", période:"0", prix:"161460"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"21", période:"0", prix:"161460"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"22", période:"0", prix:"161460"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"23", période:"0", prix:"161460"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"24", période:"0", prix:"165600"}, 
+
+ { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"2", période:"0", prix:"109365"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"3", période:"0", prix:"109365"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"4", période:"0", prix:"109365"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"5", période:"0", prix:"122130"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"6", période:"0", prix:"126615"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"7", période:"0", prix:"126615"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"8", période:"0", prix:"131565"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"9", période:"0", prix:"136965"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"10", période:"0", prix:"136965"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"11", période:"0", prix:"151455"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"12", période:"0", prix:"151455"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"13", période:"0", prix:"151455"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"14", période:"0", prix:"161460"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"15", période:"0", prix:"161460"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"16", période:"0", prix:"161460"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"17", période:"0", prix:"165600"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"18", période:"0", prix:"165600"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"19", période:"0", prix:"165600"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"20", période:"0", prix:"165600"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"21", période:"0", prix:"165600"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"22", période:"0", prix:"165600"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"23", période:"0", prix:"165600"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"24", période:"0", prix:"165600"},  
+
+
+    {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"1", période:"0", prix:"102074"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"2", période:"0", prix:"102074"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"3", période:"0", prix:"11412"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"4", période:"0", prix:"11412"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"5", période:"0", prix:"11412"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"6", période:"0", prix:"11412"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"7", période:"0", prix:"113988"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"8", période:"0", prix:"113988"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"9", période:"0", prix:"118174"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"10", période:"0", prix:"118174"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"11", période:"0", prix:"122794"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"12", période:"0", prix:"122794"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"13", période:"0", prix:"127834"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"14", période:"0", prix:"127834"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"15", période:"0", prix:"127834"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"16", période:"0", prix:"141358"},   
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"17", période:"0", prix:"141358"},   
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"18", période:"0", prix:"141358"},   
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"19", période:"0", prix:"141358"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"20", période:"0", prix:"150696"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"21", période:"0", prix:"150696"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"22", période:"0", prix:"150696"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"23", période:"0", prix:"150696"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"24", période:"0", prix:"154560"}, 
+
+ { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"2", période:"0", prix:"11412"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"3", période:"0", prix:"11412"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"4", période:"0", prix:"11412"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"5", période:"0", prix:"113988"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"6", période:"0", prix:"118174"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"7", période:"0", prix:"118174"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"8", période:"0", prix:"122794"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"9", période:"0", prix:"127834"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"10", période:"0", prix:"127834"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"11", période:"0", prix:"141358"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"12", période:"0", prix:"141358"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"13", période:"0", prix:"141358"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"14", période:"0", prix:"150696"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"15", période:"0", prix:"150696"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"16", période:"0", prix:"150696"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"17", période:"0", prix:"154560"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"18", période:"0", prix:"154560"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"19", période:"0", prix:"154560"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"20", période:"0", prix:"154560"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"21", période:"0", prix:"154560"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"22", période:"0", prix:"154560"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"23", période:"0", prix:"154560"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"24", période:"0", prix:"154560"},  
+
+
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"1", période:"0", prix:"87492"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"2", période:"0", prix:"87492"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"3", période:"0", prix:"95496"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"4", période:"0", prix:"95496"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"5", période:"0", prix:"95496"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"6", période:"0", prix:"95496"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"7", période:"0", prix:"97704"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"8", période:"0", prix:"97704"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"9", période:"0", prix:"101292"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"10", période:"0", prix:"101292"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"11", période:"0", prix:"105252"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"12", période:"0", prix:"105252"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"13", période:"0", prix:"109572"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"14", période:"0", prix:"109572"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"15", période:"0", prix:"109572"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"16", période:"0", prix:"121164"},   
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"17", période:"0", prix:"121164"},   
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"18", période:"0", prix:"121164"},   
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"19", période:"0", prix:"121164"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"20", période:"0", prix:"129168"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"21", période:"0", prix:"129168"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"22", période:"0", prix:"129168"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"23", période:"0", prix:"129168"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"24", période:"0", prix:"132480"}, 
+
+ { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"2", période:"0", prix:"95496"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"3", période:"0", prix:"95496"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"4", période:"0", prix:"95496"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"5", période:"0", prix:"97704"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"6", période:"0", prix:"101292"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"7", période:"0", prix:"101292"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"8", période:"0", prix:"105252"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"9", période:"0", prix:"109572"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"10", période:"0", prix:"109572"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"11", période:"0", prix:"121164"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"12", période:"0", prix:"121164"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"13", période:"0", prix:"121164"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"14", période:"0", prix:"129168"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"15", période:"0", prix:"129168"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"16", période:"0", prix:"129168"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"17", période:"0", prix:"132480"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"18", période:"0", prix:"132480"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"19", période:"0", prix:"132480"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"20", période:"0", prix:"132480"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"21", période:"0", prix:"132480"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"22", période:"0", prix:"132480"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"23", période:"0", prix:"132480"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"24", période:"0", prix:"132480"},  
+
+
+     {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"1", période:"0", prix:"58328"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"2", période:"0", prix:"58328"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"3", période:"0", prix:"63664"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"4", période:"0", prix:"63664"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"5", période:"0", prix:"63664"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"6", période:"0", prix:"63664"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"7", période:"0", prix:"65136"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"8", période:"0", prix:"65136"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"9", période:"0", prix:"67528"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"10", période:"0", prix:"67528"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"11", période:"0", prix:"70168"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"12", période:"0", prix:"70168"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"13", période:"0", prix:"73048"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"14", période:"0", prix:"73048"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"15", période:"0", prix:"73048"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"16", période:"0", prix:"80776"},   
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"17", période:"0", prix:"80776"},   
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"18", période:"0", prix:"80776"},   
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"19", période:"0", prix:"80776"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"20", période:"0", prix:"86112"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"21", période:"0", prix:"86112"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"22", période:"0", prix:"86112"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"23", période:"0", prix:"86112"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Essence", puissance:"24", période:"0", prix:"88320"}, 
+
+ { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"2", période:"0", prix:"63664"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"3", période:"0", prix:"63664"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"4", période:"0", prix:"63664"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"5", période:"0", prix:"65136"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"6", période:"0", prix:"67528"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"7", période:"0", prix:"67528"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"8", période:"0", prix:"70168"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"9", période:"0", prix:"73048"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"10", période:"0", prix:"73048"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"11", période:"0", prix:"80776"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"12", période:"0", prix:"80776"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"13", période:"0", prix:"80776"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"14", période:"0", prix:"86112"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"15", période:"0", prix:"86112"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"16", période:"0", prix:"86112"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"17", période:"0", prix:"88320"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"18", période:"0", prix:"88320"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"19", période:"0", prix:"88320"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"20", période:"0", prix:"88320"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"21", période:"0", prix:"88320"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"22", période:"0", prix:"88320"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"23", période:"0", prix:"88320"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Promenade et Affaire", energie:"Diesel", puissance:"24", période:"0", prix:"88320"},  
+
+
+   {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"1", période:"0", prix:"80040"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"2", période:"0", prix:"80040"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"3", période:"0", prix:"85560"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"4", période:"0", prix:"85560"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"5", période:"0", prix:"85560"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"6", période:"0", prix:"85560"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"7", période:"0", prix:"95220"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"8", période:"0", prix:"95220"},
+  {nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"9", période:"0", prix:"95220"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"10", période:"0", prix:"95220"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"11", période:"0", prix:"106490"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"12", période:"0", prix:"106490"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"13", période:"0", prix:"115460"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"14", période:"0", prix:"115460"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"15", période:"0", prix:"115460"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"16", période:"0", prix:"122820"},   
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"17", période:"0", prix:"122820"},   
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"18", période:"0", prix:"122820"},   
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"19", période:"0", prix:"122820"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"20", période:"0", prix:"128800"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"21", période:"0", prix:"128800"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"22", période:"0", prix:"128800"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"23", période:"0", prix:"128800"},     
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"24", période:"0", prix:"132480"}, 
+
+ { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"2", période:"0", prix:"85560"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"3", période:"0", prix:"85560"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"4", période:"0", prix:"85560"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"5", période:"0", prix:"95220"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"6", période:"0", prix:"99590"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"7", période:"0", prix:"99590"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"8", période:"0", prix:"99591"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"9", période:"0", prix:"115460"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"10", période:"0", prix:"115460"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"11", période:"0", prix:"122820"},
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"12", période:"0", prix:"122820"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"13", période:"0", prix:"122820"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"14", période:"0", prix:"128800"},  
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"15", période:"0", prix:"128800"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"16", période:"0", prix:"128800"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"17", période:"0", prix:"132480"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"18", période:"0", prix:"132480"},    
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"19", période:"0", prix:"132480"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"20", période:"0", prix:"132480"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"21", période:"0", prix:"132480"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"22", période:"0", prix:"132480"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"23", période:"0", prix:"132480"},      
+  { nomAssurance: "Ny Havana", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"24", période:"0", prix:"132480"},  
+
+
+     {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"1", période:"0", prix:"120060"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"2", période:"0", prix:"120060"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"3", période:"0", prix:"128340"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"4", période:"0", prix:"128340"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"5", période:"0", prix:"128340"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"6", période:"0", prix:"128340"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"7", période:"0", prix:"142830"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"8", période:"0", prix:"142830"},
+  {nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"9", période:"0", prix:"142830"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"10", période:"0", prix:"142830"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"11", période:"0", prix:"159735"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"12", période:"0", prix:"159735"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"13", période:"0", prix:"173190"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"14", période:"0", prix:"173190"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"15", période:"0", prix:"173190"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"16", période:"0", prix:"184230"},   
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"17", période:"0", prix:"184230"},   
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"18", période:"0", prix:"184230"},   
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"19", période:"0", prix:"184230"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"20", période:"0", prix:"193200"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"21", période:"0", prix:"193200"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"22", période:"0", prix:"193200"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"23", période:"0", prix:"193200"},     
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"24", période:"0", prix:"198720"}, 
+
+ { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"2", période:"0", prix:"128340"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"3", période:"0", prix:"128340"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"4", période:"0", prix:"128340"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"5", période:"0", prix:"142830"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"6", période:"0", prix:"132480"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"7", période:"0", prix:"132480"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"8", période:"0", prix:"132480"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"9", période:"0", prix:"173190"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"10", période:"0", prix:"173190"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"11", période:"0", prix:"184230"},
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"12", période:"0", prix:"184230"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"13", période:"0", prix:"184230"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"14", période:"0", prix:"193200"},  
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"15", période:"0", prix:"193200"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"16", période:"0", prix:"193200"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"17", période:"0", prix:"198720"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"18", période:"0", prix:"198720"},    
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"19", période:"0", prix:"198720"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"20", période:"0", prix:"198720"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"21", période:"0", prix:"198720"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"22", période:"0", prix:"198720"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"23", période:"0", prix:"198720"},      
+  { nomAssurance: "Allianz", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"24", période:"0", prix:"198720"},  
+
+
+   {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"1", période:"0", prix:"112056"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"2", période:"0", prix:"112056"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"3", période:"0", prix:"119784"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"4", période:"0", prix:"119784"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"5", période:"0", prix:"119784"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"6", période:"0", prix:"119784"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"7", période:"0", prix:"133308"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"8", période:"0", prix:"133308"},
+  {nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"9", période:"0", prix:"133308"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"10", période:"0", prix:"133308"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"11", période:"0", prix:"149086"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"12", période:"0", prix:"149086"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"13", période:"0", prix:"161644"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"14", période:"0", prix:"161644"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"15", période:"0", prix:"161644"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"16", période:"0", prix:"171948"},   
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"17", période:"0", prix:"171948"},   
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"18", période:"0", prix:"171948"},   
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"19", période:"0", prix:"171948"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"20", période:"0", prix:"180320"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"21", période:"0", prix:"180320"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"22", période:"0", prix:"180320"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"23", période:"0", prix:"180320"},     
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"24", période:"0", prix:"185472"}, 
+
+ { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"2", période:"0", prix:"119784"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"3", période:"0", prix:"119784"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"4", période:"0", prix:"119784"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"5", période:"0", prix:"133308"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"6", période:"0", prix:"139426"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"7", période:"0", prix:"139426"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"8", période:"0", prix:"99591"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"9", période:"0", prix:"161644"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"10", période:"0", prix:"161644"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"11", période:"0", prix:"171948"},
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"12", période:"0", prix:"171948"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"13", période:"0", prix:"171948"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"14", période:"0", prix:"180320"},  
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"15", période:"0", prix:"180320"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"16", période:"0", prix:"180320"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"17", période:"0", prix:"185472"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"18", période:"0", prix:"185472"},    
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"19", période:"0", prix:"185472"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"20", période:"0", prix:"185472"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"21", période:"0", prix:"185472"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"22", période:"0", prix:"185472"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"23", période:"0", prix:"185472"},      
+  { nomAssurance: "Aro", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"24", période:"0", prix:"185472"},  
+
+
+   {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"1", période:"0", prix:"96048"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"2", période:"0", prix:"96048"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"3", période:"0", prix:"102672"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"4", période:"0", prix:"102672"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"5", période:"0", prix:"102672"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"6", période:"0", prix:"102672"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"7", période:"0", prix:"114264"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"8", période:"0", prix:"114264"},
+  {nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"9", période:"0", prix:"114264"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"10", période:"0", prix:"114264"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"11", période:"0", prix:"127788"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"12", période:"0", prix:"127788"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"13", période:"0", prix:"138552"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"14", période:"0", prix:"138552"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"15", période:"0", prix:"138552"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"16", période:"0", prix:"147384"},   
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"17", période:"0", prix:"147384"},   
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"18", période:"0", prix:"147384"},   
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"19", période:"0", prix:"147384"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"20", période:"0", prix:"154560"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"21", période:"0", prix:"154560"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"22", période:"0", prix:"154560"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"23", période:"0", prix:"154560"},     
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"24", période:"0", prix:"158976"}, 
+
+ { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"2", période:"0", prix:"102672"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"3", période:"0", prix:"102672"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"4", période:"0", prix:"102672"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"5", période:"0", prix:"114264"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"6", période:"0", prix:"119508"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"7", période:"0", prix:"119508"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"8", période:"0", prix:"99591"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"9", période:"0", prix:"138552"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"10", période:"0", prix:"138552"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"11", période:"0", prix:"147384"},
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"12", période:"0", prix:"147384"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"13", période:"0", prix:"147384"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"14", période:"0", prix:"154560"},  
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"15", période:"0", prix:"154560"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"16", période:"0", prix:"154560"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"17", période:"0", prix:"158976"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"18", période:"0", prix:"158976"},    
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"19", période:"0", prix:"158976"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"20", période:"0", prix:"158976"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"21", période:"0", prix:"158976"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"22", période:"0", prix:"158976"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"23", période:"0", prix:"158976"},      
+  { nomAssurance: "Saham", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"24", période:"0", prix:"158976"},  
+
+
+   {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"1", période:"0", prix:"64032"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"2", période:"0", prix:"64032"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"3", période:"0", prix:"68448"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"4", période:"0", prix:"68448"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"5", période:"0", prix:"68448"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"6", période:"0", prix:"68448"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"7", période:"0", prix:"76176"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"8", période:"0", prix:"76176"},
+  {nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"9", période:"0", prix:"79672"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"10", période:"0", prix:"79672"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"11", période:"0", prix:"85192"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"12", période:"0", prix:"85192"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"13", période:"0", prix:"92368"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"14", période:"0", prix:"92368"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"15", période:"0", prix:"92368"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"16", période:"0", prix:"98256"},   
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"17", période:"0", prix:"98256"},   
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"18", période:"0", prix:"98256"},   
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"19", période:"0", prix:"98256"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"20", période:"0", prix:"103040"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"21", période:"0", prix:"103040"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"22", période:"0", prix:"103040"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"23", période:"0", prix:"103040"},     
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Essence", puissance:"24", période:"0", prix:"105984"}, 
+
+ { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"1", période:"0", prix:"0"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"2", période:"0", prix:"68448"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"3", période:"0", prix:"68448"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"4", période:"0", prix:"68448"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"5", période:"0", prix:"76176"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"6", période:"0", prix:"99590"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"7", période:"0", prix:"99590"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"8", période:"0", prix:"99591"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"9", période:"0", prix:"92368"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"10", période:"0", prix:"92368"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"11", période:"0", prix:"98256"},
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"12", période:"0", prix:"98256"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"13", période:"0", prix:"98256"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"14", période:"0", prix:"103040"},  
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"15", période:"0", prix:"103040"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"16", période:"0", prix:"103040"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"17", période:"0", prix:"105984"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"18", période:"0", prix:"105984"},    
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"19", période:"0", prix:"105984"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"20", période:"0", prix:"105984"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"21", période:"0", prix:"105984"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"22", période:"0", prix:"105984"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"23", période:"0", prix:"105984"},      
+  { nomAssurance: "MAMA", typeAssurance: "RC", typeVéhicule: "Transport de personne à titre gratuit", energie:"Diesel", puissance:"24", période:"0", prix:"105984"},  
+
+
+
+
+
+]
+
+var rdata={}
+for(var i in data){
+	if(!rdata[data[i]["energie"]]){
+		rdata[data[i]["energie"]]={};
+	}
+	if(!rdata[data[i]["energie"]][data[i]["puissance"]]){
+		rdata[data[i]["energie"]][data[i]["puissance"]]={};
+	}
+	if(!rdata[data[i]["energie"]][data[i]["puissance"]][data[i]["typeVéhicule"]]){
+		rdata[data[i]["energie"]][data[i]["puissance"]][data[i]["typeVéhicule"]]={};
+	}
+	if(!rdata[data[i]["energie"]][data[i]["puissance"]][data[i]["typeVéhicule"]][data[i]["nomAssurance"]]){
+		rdata[data[i]["energie"]][data[i]["puissance"]][data[i]["typeVéhicule"]][data[i]["nomAssurance"]]={}
+		rdata[data[i]["energie"]][data[i]["puissance"]][data[i]["typeVéhicule"]][data[i]["nomAssurance"]]={
+			prix:[data[i]["prix"]][0],
+			periode:[data[i]["période"]][0],
+		}
+	}
+}
+	
+	
+	
+		var gdata={
+			"prix":"",
+			"periode":"",
+			"puissance":"",
+			"energie":"",
+			"tv":"",
+		}
+		
+		
+		
+		
+		var choix_Ny_Havana=document.querySelector("#choix_Ny_Havana");
+		var choix_Allianz=document.querySelector("#choix_Allianz");
+		var choix_Aro=document.querySelector("#choix_Aro");
+		var choix_Saham=document.querySelector("#choix_Saham");
+		
+		
+		choix_Ny_Havana.addEventListener("click",function(){
+			open("step_4");
+			resume(choix_Ny_Havana);
+		});
+		choix_Allianz.addEventListener("click",function(){
+			open("step_4");
+			resume(choix_Allianz);
+		});
+		choix_Aro.addEventListener("click",function(){
+			open("step_4");
+			resume(choix_Aro);
+		});
+		choix_Saham.addEventListener("click",function(){
+			open("step_4");
+			resume(choix_Saham);
+		});
+		
+		
+		function resume(c){
+			gdata.prix=c.dataset["prix"];
+			gdata.periode=c.dataset["periode"];
+			var recap=document.querySelector("#recap");
+			
+			
+			var cdata={
+				"prix":"Prix ",
+				"periode":"Période",
+				"puissance":"Puissance",
+				"energie":"Energie",
+				"tv":"Type de Vehicule",
+			}
+			var text="";
+			for(var i in gdata){
+				var k=cdata[i];
+				var v=gdata[i];
+				text+="<div><span class=\"xlabel\">"+k+"</span> : "+v+"</div>";
+			}
+			
+			
+			
+			recap.innerHTML=text;
+		}
+		var create=document.querySelector("#create");
+		var devis=document.querySelector("#devis");
+		var rpage_2=document.querySelector("#rpage_2");
+		var rpage_3=document.querySelector("#rpage_3");
+		var rpage_1=document.querySelector("#rpage_1");
+		create.addEventListener("click",function(){
+			open("step_2");
+		});
+		devis.addEventListener("click",function(){
+			drawTable();
+			open("step_3");
+		});
+		rpage_2.addEventListener("click",function(){
+			open("step_2");
+		});
+		rpage_3.addEventListener("click",function(){
+			open("step_3");
+		});
+		rpage_1.addEventListener("click",function(){
+			open("step_1");
+		});
+		open("step_1");
+		function open(step){
+			var elt=document.querySelector("#"+step);
+			if(elt){
+				cleanAll();
+				elt.classList.add("display");
+			}
+		}
+		function drawTable(){
+			var energie=document.querySelector("#energie").value;
+			var puissance=document.querySelector("#puissance").value;
+			var tv=document.querySelector("#typeVehicule").value;
+			
+			if(rdata[energie]){
+				if(rdata[energie][puissance]){
+					if(rdata[energie][puissance][tv]){
+						gdata={
+							"prix":"",
+							"periode":"",
+							"puissance":puissance,
+							"energie":energie,
+							"tv":tv,
+						}
+						console.log(rdata[energie][puissance][tv]);
+						setEnergie("Ny Havana",rdata[energie][puissance][tv]["Ny Havana"]);
+						setEnergie("Allianz",rdata[energie][puissance][tv]["Allianz"]);
+						setEnergie("Aro",rdata[energie][puissance][tv]["Aro"]);
+						setEnergie("Saham",rdata[energie][puissance][tv]["Saham"]);
+						setEnergie("MAMA",rdata[energie][puissance][tv]["MAMA"]);
+						return true;
+					}
+				}
+			}
+			setEnergie("Ny Havana");
+			setEnergie("Allianz");
+			setEnergie("Aro");
+			setEnergie("Saham");
+			setEnergie("MAMA");
+		}
+		function setEnergie(name,d){
+			name=name.replace(" ","_","g");
+			var prix=document.querySelector("#prix_"+name);
+			var periode=document.querySelector("#periode_"+name);
+			var choix=document.querySelector("#choix_"+name);
+			if(!d){
+				prix.textContent="";
+				periode.textContent="";
+				choix.dataset["prix"]=0;
+				choix.dataset["periode"]=0;
+				return false;
+			}
+			prix.textContent=d.prix;
+			periode.textContent=d.periode;
+			choix.dataset["prix"]=d.prix;
+			choix.dataset["periode"]=d.periode;
+		}
+		function cleanAll(){
+			var pages=document.querySelectorAll(".page");
+			for(var i in pages){
+				var v=pages[i];
+				if(!v.classList){
+					continue;
+				}
+				v.classList.remove("display");
+			}
+		}
+	})()
+</script>
+
+
+
+
+</body><style type="text/css"></style></html>
