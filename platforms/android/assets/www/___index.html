@@ -66,29 +66,6 @@ table td{
   padding:5px;
   min-width:50px;
 }
-
-table th,
-table td{
-  border:none;
-  border-collapse:collapse;
-  padding:5px;
-  min-width:50px;
-}
-table th,
-table td{
-  border-bottom: 1px solid #00adef;
-  border-top: 1px solid #00adef;
-  border-left: 1px solid #00adef55;
-  border-right: 1px solid #00adef55;
-  border-collapse:collapse;
-  padding:5px;
-  min-width:50px;
-}
-table tr:nth-child(2n){
-  background-color: #DDD;
-}
-
-
 .header_part{
   background-color: #000;
   text-align: center;
@@ -190,28 +167,19 @@ input:not([type="checkbox"]){
   width: 250px;
   max-width: 110%;
 }
+input:not([type]),
+input:not([type="text"]){
+  padding-top:0px;
+  padding-bottom:0px;
+}
 .blue_bg.page_add *{
   padding-top:0px !important;
   padding-bottom:0px !important;
-}
-.blue_bg.page_add input:not([type]),
-.blue_bg.page_add input:not([type="text"]),
-.blue_bg.page_add select,
-select,
-input:not([type]),
-input:not([type="text"]){
- padding: 10px !important;
-border: 0px solid #000;
-border-bottom: 4px solid #04729c;
-border-left: 0px;
-border-right: 0px;
-margin:2px;
 }
 .page{
   height: 90%;
   position: relative;
   overflow: auto;
-  overflow-x: hidden;
 }
 .blue_bg{
   width: 50%;
@@ -239,89 +207,66 @@ height: 60%;
   display:block;
 }
 .little_white.r_button{
-
-
 cursor:pointer;
 display: inline-block;
 margin: 5px;
 position: absolute;
 right: -53%;
 bottom: -21px;
-font-size: 25px;
+padding: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 32px;
 background-color: #ec008c;
 display: inline-block;
- padding: 3px !important;
-border-radius: 2px;
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-width:142px;
-text-align:center;
+padding:4px !important;
 }
 .little_white.n_button{
-
 cursor:pointer;
-padding: 4px !important;
-font-size: 25px;
+  padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+font-size: 34px;
 background-color: #ec008c;
 display: inline-block;
 margin: 10px;
 position: absolute;
 right: -89%;
 bottom: -26px;
-border-radius: 2px;
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-width: 142px;
-text-align: center;
 }
 
 
 
 @media screen and (max-width:1100px){
-.input_group,input{
-	font-size:12px;
-}
-
-.nav .menu{
+.nav{
   display:none;
 }
-.big_blue {
-    font-size: 30px;
-  margin: 0px;
-}
 
-.little_white label{
-	display:none;
-}
 
 .little_white.r_button{
- padding: 3px !important;
+  padding: 3px !important;
 font-size: 25px;
 background-color: #ec008c;
 display: inline-block;
 margin: 5px;
 position: relative;
-right: -4px;
+right: 0px;
 bottom: 1px;
 padding:4px !important;
-border-radius: 2px;
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-width:142px;
-text-align:center;
 }
 .little_white.n_button{
-padding: 4px !important;
-padding-top: 20px;
-padding-bottom: 20px;
-font-size: 25px;
+  padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+font-size: 30px;
 background-color: #ec008c;
 display: inline-block;
 margin: 10px;
 position: relative;
 right: 0px;
 bottom: 0px;
-border-radius: 2px;
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-width: 142px;
-text-align: center;
 }
 
 }
@@ -337,7 +282,7 @@ text-align: center;
   background-color: white;
   position: relative;
   width: 40%;
-  min-height: 200px;
+  height: 80%;
   margin-left: 20px;
   display: inline-block;
   vertical-align: top;
@@ -345,7 +290,7 @@ text-align: center;
 .payement{
   position: relative;
   width: 40%;
-  min-height: 200px;
+  height: 100%;
   display: inline-block;
   vertical-align: top;
   font-weight: bold;
@@ -358,7 +303,7 @@ text-align: center;
   background-color: white;
   position: relative;
   width: 90%;
-  min-height: 200px;
+  height: 80%;
   margin-left: 20px;
   display: inline-block;
   vertical-align: top;
@@ -366,7 +311,7 @@ text-align: center;
 .payement{
   position: relative;
   width: 90%;
-  min-height: 200px;
+  height: 100%;
   display: inline-block;
   vertical-align: top;
   font-weight: bold;
@@ -378,10 +323,6 @@ text-align: center;
 .xlabel{
 	display:inline-block;
 	width:100px;
-}
-.overflow{
-	width:100%;
-	overflow:auto;
 }
 
 </style>
@@ -514,19 +455,19 @@ text-align: center;
 
 					<div class="little_white">
 						<label>Nom ou raison sociale :</label>
-						<input placeholder="Nom ou raison sociale">
+						<input>
 					</div>
 					<div class="little_white">
 						<label>Adresse :</label>
-						<input placeholder="Adresse">
+						<input>
 					</div>
 					<div class="little_white">
 						<label>E-mail :</label>
-						<input placeholder="E-mail">
+						<input>
 					</div>
 					<div class="little_white">
 						<label>Tél. :</label>
-						<input placeholder="Tél.">
+						<input>
 					</div>
 					<div class="little_white">
 						<label>Type d’assurance :</label>
@@ -655,7 +596,7 @@ text-align: center;
 			</div>
 		</div>
 
-		<div class="present_in overflow">
+		<div class="present_in">
 			<div class="light_blue_bg">
 				<div class="big_blue">Comparatif</div>
 					<table>
@@ -749,11 +690,11 @@ text-align: center;
 							</tr>
 						</tbody>
 					</table>
+					<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
 				</div>
 			</div>
 			<div class="bg_img"><img src=""></div>
 		</div>
-		<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
 	</div>
 	
 <div class="page" id="step_4">
