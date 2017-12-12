@@ -213,6 +213,7 @@ margin:2px;
 }
 .page{
   height: 90%;
+  
   position: relative;
   overflow: auto;
   overflow-x: hidden;
@@ -277,6 +278,26 @@ width: 142px;
 text-align: center;
 }
 
+.pc{
+	display:block;
+}
+.mobile{
+	display:none;
+}
+@media screen and (max-width:1100px){
+	.page{
+	  width: 93% !important;
+	}	  
+	.pc{
+		display:none;
+	}
+	.mobile{
+		display:block;
+	}
+	.mobile table{
+		width: 90%;
+	}
+}
 
 
 @media screen and (max-width:1100px){
@@ -294,6 +315,9 @@ text-align: center;
 
 .little_white label{
 	display:none;
+}
+.little_white label.disp{
+	display:block;
 }
 
 .little_white.r_button{
@@ -388,6 +412,10 @@ text-align: center;
 	overflow:auto;
 }
 
+select,
+select option{
+	background-color:#FFF;
+}
 </style>
 
 
@@ -533,7 +561,7 @@ text-align: center;
 						<input placeholder="Tél.">
 					</div>
 					<div class="little_white">
-						<label>Type d’assurance :</label>
+						<label class="disp">Type d’assurance :</label>
 						<span class="input_group">
 						<input type="checkbox">Responsabilité civile<br>
 						<input type="checkbox">Bris de glace<br>
@@ -542,7 +570,7 @@ text-align: center;
 						</span>
 					</div>
 					<div class="little_white">
-						<label>Type de tarif :</label>
+						<label class="disp">Type de tarif :</label>
 					<select id="typeVehicule">
 					 <option value="Promenade et Affaire">Promenade et Affaire</option>
 					  <option value="Transport de personne à titre gratuit">Transport de personne à titre gratuit</option>
@@ -552,18 +580,18 @@ text-align: center;
 					  <option value="Véhicule de Types spéciaux">Véhicule de Types spéciaux</option> </select>
 					</div>
 					<div class="little_white">
-						<label>Période :</label>
-					<select>
-					<option>
+						<label class="disp">Période :</label>
+					<select id="periode">
+					<option value="3 mois">
 					3 mois</option>
-					<option>
+					<option value="6 mois">
 					6 mois</option>
-					<option>
+					<option value="12 mois">
 					12 mois</option>
 					</select>
 					</div>
 					<div class="little_white">
-						<label>Source :</label>
+						<label class="disp">Source :</label>
 					<select id="energie">
 					<option value="Essence">
 					Essence</option>
@@ -572,7 +600,7 @@ text-align: center;
 					</select>
 					</div>
 					<div class="little_white">
-						<label>Puissance fiscale :</label>
+						<label class="disp">Puissance fiscale :</label>
 					<select id="puissance">
 					<option value="1">1</option>
  
@@ -660,105 +688,319 @@ text-align: center;
 		</div>
 
 		<div class="present_in">
-			<div class="light_blue_bg">
+			<div class="light_blue_bg pc">
 				<div class="big_blue">Comparatif</div>
-					<table>
-						<thead>
-							<tr>
-								<th>
-									Num. :
-								</th>
-								<th>
-									<img src="ico1.png">
-								</th>
-								<th>
-									<img src="ico2.png">
-								</th>
-								<th>
-									<img src="ico3.png">
-								</th>
-								<th>
-									<img src="ico4.png">
-								</th>
-								<th>
-									<img src="ico5.png">
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									Montant
-								</td>
-								<td id="prix_Ny_Havana">
-								</td>
-								<td id="prix_Allianz">
-								</td>
-								<td id="prix_Aro">
-								</td>
-								<td id="prix_Saham">
-								</td>
-								<td id="prix_MAMA">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Durée
-								</td>
-								<td id="periode_Ny_Havana">
-								</td>
-								<td id="periode_Allianz">
-								</td>
-								<td id="periode_Aro">
-								</td>
-								<td id="periode_Saham">
-								</td>
-								<td id="periode_MAMA">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Obs
-								</td>
-								<td>
-								</td>
-								<td>
-								</td>
-								<td>
-								</td>
-								<td>
-								</td>
-								<td>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Choisir
-								</td>
-								<td>
-									<b id="choix_Ny_Havana" data-assurance="Ny Havana">choisir</b>
-								</td>
-								<td>
-									<b id="choix_Allianz" data-assurance="Allianz">choisir</b>
-								</td>
-								<td>
-									<b id="choix_Aro" data-assurance="Aro">choisir</b>
-								</td>
-								<td>
-									<b id="choix_Saham" data-assurance="Saham">choisir</b>
-								</td>
-								<td>
-									<b id="choix_MAMA" data-assurance="MAMA">choisir</b>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
-				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Num. :
+							</th>
+							<th>
+								<img src="ico1.png">
+							</th>
+							<th>
+								<img src="ico2.png">
+							</th>
+							<th>
+								<img src="ico3.png">
+							</th>
+							<th>
+								<img src="ico4.png">
+							</th>
+							<th>
+								<img src="ico5.png">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Montant
+							</td>
+							<td id="prix_Ny_Havana">
+							</td>
+							<td id="prix_Allianz">
+							</td>
+							<td id="prix_Aro">
+							</td>
+							<td id="prix_Saham">
+							</td>
+							<td id="prix_MAMA">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Durée
+							</td>
+							<td id="periode_Ny_Havana">
+							</td>
+							<td id="periode_Allianz">
+							</td>
+							<td id="periode_Aro">
+							</td>
+							<td id="periode_Saham">
+							</td>
+							<td id="periode_MAMA">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Obs
+							</td>
+							<td>
+							</td>
+							<td>
+							</td>
+							<td>
+							</td>
+							<td>
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Choisir
+							</td>
+							<td>
+								<b id="choix_Ny_Havana" data-assurance="Ny Havana">choisir</b>
+							</td>
+							<td>
+								<b id="choix_Allianz" data-assurance="Allianz">choisir</b>
+							</td>
+							<td>
+								<b id="choix_Aro" data-assurance="Aro">choisir</b>
+							</td>
+							<td>
+								<b id="choix_Saham" data-assurance="Saham">choisir</b>
+							</td>
+							<td>
+								<b id="choix_MAMA" data-assurance="MAMA">choisir</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
 			</div>
-			<div class="bg_img"><img src=""></div>
+			<div class="light_blue_bg mobile">
+				<div class="big_blue">Comparatif</div>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Num. :
+							</th>
+							<th>
+								<img src="ico1.png">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Montant
+							</td>
+							<td id="prix_Ny_Havana">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Durée
+							</td>
+							<td id="periode_Ny_Havana">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Obs
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Choisir
+							</td>
+							<td>
+								<b id="choix_Ny_Havana" data-assurance="Ny Havana">choisir</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Num. :
+							</th>
+							<th>
+								<img src="ico2.png">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Montant
+							</td>
+							<td id="prix_Aro">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Durée
+							</td>
+							<td id="periode_Aro">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Obs
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Choisir
+							</td>
+							<td>
+								<b id="choix_Aro" data-assurance="Aro">choisir</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Num. :
+							</th>
+							<th>
+								<img src="ico3.png">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Montant
+							</td>
+							<td id="prix_Aro">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Durée
+							</td>
+							<td id="periode_Aro">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Obs
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Choisir
+							</td>
+							<td>
+								<b id="choix_Aro" data-assurance="Aro">choisir</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Num. :
+							</th>
+							<th>
+								<img src="ico4.png">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Montant
+							</td>
+							<td id="prix_Saham">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Durée
+							</td>
+							<td id="periode_Saham">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Obs
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Choisir
+							</td>
+							<td>
+								<b id="choix_Saham" data-assurance="Saham">choisir</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Num. :
+							</th>
+							<th>
+								<img src="ico5.png">
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Montant
+							</td>
+							<td id="prix_MAMA">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Durée
+							</td>
+							<td id="periode_MAMA">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Obs
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Choisir
+							</td>
+							<td>
+								<b id="choix_MAMA" data-assurance="MAMA">choisir</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
+			</div>
 		</div>
+		<div class="bg_img"><img src=""></div>
 	</div>
+</div>
 	
 <div class="page" id="step_4">
 
@@ -1379,28 +1621,39 @@ for(var i in data){
 		
 		
 		
-		var choix_Ny_Havana=document.querySelector("#choix_Ny_Havana");
-		var choix_Allianz=document.querySelector("#choix_Allianz");
-		var choix_Aro=document.querySelector("#choix_Aro");
-		var choix_Saham=document.querySelector("#choix_Saham");
+		var choix_Ny_Havana=document.querySelectorAll("#choix_Ny_Havana");
+		var choix_Allianz=document.querySelectorAll("#choix_Allianz");
+		var choix_Aro=document.querySelectorAll("#choix_Aro");
+		var choix_Saham=document.querySelectorAll("#choix_Saham");
+		var choix_MAMA=document.querySelectorAll("#choix_MAMA");
 		
 		
-		choix_Ny_Havana.addEventListener("click",function(){
+		evs(choix_Ny_Havana,"click",function(e){
 			open("step_4");
-			resume(choix_Ny_Havana);
+			resume(e.target);
 		});
-		choix_Allianz.addEventListener("click",function(){
+		evs(choix_Allianz,"click",function(e){
 			open("step_4");
-			resume(choix_Allianz);
+			resume(e.target);
 		});
-		choix_Aro.addEventListener("click",function(){
+		evs(choix_Aro,"click",function(e){
 			open("step_4");
-			resume(choix_Aro);
+			resume(e.target);
 		});
-		choix_Saham.addEventListener("click",function(){
+		evs(choix_Saham,"click",function(e){
 			open("step_4");
-			resume(choix_Saham);
+			resume(e.target);
 		});
+		evs(choix_MAMA,"click",function(e){
+			open("step_4");
+			resume(e.target);
+		});
+		function evs(e,ev,f){
+			var l=e.length;
+			for(var i=0;i<l;i++){
+				e[i].addEventListener(ev,f);
+			}
+		};
 		
 		
 		function resume(c){
@@ -1428,11 +1681,14 @@ for(var i in data){
 			
 			recap.innerHTML=text;
 		}
+		
 		var create=document.querySelector("#create");
 		var devis=document.querySelector("#devis");
-		var rpage_2=document.querySelector("#rpage_2");
-		var rpage_3=document.querySelector("#rpage_3");
-		var rpage_1=document.querySelector("#rpage_1");
+		
+		var rpage_2=document.querySelectorAll("#rpage_2");
+		var rpage_3=document.querySelectorAll("#rpage_3");
+		var rpage_1=document.querySelectorAll("#rpage_1");
+		
 		create.addEventListener("click",function(){
 			open("step_2");
 		});
@@ -1440,13 +1696,13 @@ for(var i in data){
 			drawTable();
 			open("step_3");
 		});
-		rpage_2.addEventListener("click",function(){
+		evs(rpage_2,"click",function(){
 			open("step_2");
 		});
-		rpage_3.addEventListener("click",function(){
+		evs(rpage_3,"click",function(){
 			open("step_3");
 		});
-		rpage_1.addEventListener("click",function(){
+		evs(rpage_1,"click",function(){
 			open("step_1");
 		});
 		open("step_1");
@@ -1460,6 +1716,7 @@ for(var i in data){
 		function drawTable(){
 			var energie=document.querySelector("#energie").value;
 			var puissance=document.querySelector("#puissance").value;
+			var periode=document.querySelector("#periode").value;
 			var tv=document.querySelector("#typeVehicule").value;
 			
 			if(rdata[energie]){
@@ -1467,7 +1724,7 @@ for(var i in data){
 					if(rdata[energie][puissance][tv]){
 						gdata={
 							"prix":"",
-							"periode":"",
+							"periode":periode,
 							"puissance":puissance,
 							"energie":energie,
 							"tv":tv,
@@ -1490,20 +1747,34 @@ for(var i in data){
 		}
 		function setEnergie(name,d){
 			name=name.replace(" ","_","g");
-			var prix=document.querySelector("#prix_"+name);
-			var periode=document.querySelector("#periode_"+name);
-			var choix=document.querySelector("#choix_"+name);
+			var prix=document.querySelectorAll("#prix_"+name);
+			var periode=document.querySelectorAll("#periode_"+name);
+			var choix=document.querySelectorAll("#choix_"+name);
 			if(!d){
-				prix.textContent="";
-				periode.textContent="";
-				choix.dataset["prix"]=0;
-				choix.dataset["periode"]=0;
+				for(var i=0;i<prix.length;i++){
+					prix[i].textContent="";
+				}
+				for(var i=0;i<periode.length;i++){
+					periode[i].textContent="";
+				}
+				for(var i=0;i<choix.length;i++){
+					choix[i].dataset["prix"]=0;
+					choix[i].dataset["periode"]=0;
+				}
 				return false;
 			}
-			prix.textContent=d.prix;
-			periode.textContent=d.periode;
-			choix.dataset["prix"]=d.prix;
-			choix.dataset["periode"]=d.periode;
+			
+			for(var i=0;i<prix.length;i++){
+				prix[i].textContent=d.prix;
+			}
+			for(var i=0;i<periode.length;i++){
+				periode[i].textContent=gdata.periode;
+			}
+			for(var i=0;i<choix.length;i++){
+				choix[i].dataset["prix"]=d.prix;
+				choix[i].dataset["periode"]=gdata.periode;
+			}
+			
 		}
 		function cleanAll(){
 			var pages=document.querySelectorAll(".page");
