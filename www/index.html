@@ -554,7 +554,7 @@ select option{
 					</div>
 					<div class="little_white">
 						<label>E-mail :</label>
-						<input placeholder="E-mail">
+						<input id="email_input" placeholder="E-mail">
 					</div>
 					<div class="little_white">
 						<label>Tél. :</label>
@@ -1043,6 +1043,7 @@ select option{
         </div>
       </div>
 	<div class="little_white r_button spl" id="rpage_3">&lt; Retour</div>
+	<div class="little_white r_button spl" id="rpage_4">&gt; Valider</div>
       <div class="bg_img"><img src=""></div>
     </div>
   </div>
@@ -1664,7 +1665,7 @@ for(var i in data){
 			
 			var cdata={
 				"prix":"Prix ",
-				"periode":"Période",
+				"periode":"Periode",
 				"puissance":"Puissance",
 				"energie":"Energie",
 				"tv":"Type de Vehicule",
@@ -1676,10 +1677,100 @@ for(var i in data){
 				var v=gdata[i];
 				text+="<div><span class=\"xlabel\">"+k+"</span> : "+v+"</div>";
 			}
-			
+			sendEmail=function(em){
+				ajaxMail(em,text);
+			};
 			
 			
 			recap.innerHTML=text;
+		}
+		function ajaxMail(em,text){
+			var data={
+				"email":em,
+				"text":text,
+			}
+			rpage_4.innerHTML="Email envoyé";
+			xhr(data,"http://sopromer.com/assurance/mail.php",function(r){
+				console.log(r);
+			});
+			function isFunction(data,object){
+				if(object){
+					return (typeof object[data]=="function");
+				}
+				return (typeof data=="function");
+			}
+			function xhr(data,to,handle,custom,customs,error){
+				var rdata={};
+				if(data && typeof data.getAttribute=="function"){
+					Array.prototype.forEach.call(data.elements,function(elt){
+						if(elt && elt.getAttribute("name")){
+							rdata[elt.getAttribute("name")]=elt.value;
+						}
+					});
+				}
+				else{
+					rdata=data;
+				}
+				tpr_sendJsForm(rdata,to,handle,custom,customs,error);
+			}
+			function tpr_sendJsForm(data,to,handle,custom,customs,error){
+				custom=custom||{readyState:4,status:200};
+				handle=handle||function(){};
+				var formElement=new FormData();
+				for(var key in data){
+					if(data[key] && data[key].nodeName && typeof data[key].getAttribute == "function"){
+						if(data[key].getAttribute("type").toLowerCase()=="file" && data[key].files){
+							for(var i in data[key].files){
+								formElement.append(key+"[]", data[key].files[i]);
+							}
+						}
+						else{
+							formElement.append(key, data[key]);
+						}
+					}
+					else{
+						formElement.append(key, data[key]);
+					}
+				}
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = function() {
+					if(customs){
+						for(var i in customs){
+							var ci=customs[i];
+							if(ci){
+								if(ci.readyState===undefined){
+									ci.readyState=4;
+								}
+								if(ci.status===undefined){
+									ci.status=200;
+								}
+								if(
+									xhr.readyState==ci.readyState
+									&& xhr.status==ci.status
+									&& isFunction(ci.handle)
+								){
+									ci.handle(xhr);
+								}
+							}
+						}
+					}
+					if(error){
+						if(xhr.readyState==4 && xhr.status!=200){
+							if(isFunction(error)){
+								error(xhr,xhr.status);
+							}
+						}
+					}
+					if(xhr.readyState==custom.readyState && xhr.status==custom.status){	
+						handle(xhr);
+					}
+					else if(xhr.status==500){
+						console.log(xhr.responseText);
+					}
+				};
+				xhr.open("POST", to, true);
+				xhr.send(formElement);
+			};
 		}
 		
 		var create=document.querySelector("#create");
@@ -1688,7 +1779,15 @@ for(var i in data){
 		var rpage_2=document.querySelectorAll("#rpage_2");
 		var rpage_3=document.querySelectorAll("#rpage_3");
 		var rpage_1=document.querySelectorAll("#rpage_1");
+		var rpage_4=document.querySelector("#rpage_4");
 		
+		rpage_4.addEventListener("click",function(){
+			var email_input=document.querySelector("#email_input").value;
+			sendEmail(email_input);
+		});
+		function sendEmail(){
+		
+		}
 		create.addEventListener("click",function(){
 			open("step_2");
 		});
