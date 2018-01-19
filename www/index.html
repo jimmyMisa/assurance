@@ -1096,22 +1096,23 @@ select option{
 					<div class="little_white">
 							<label class="disp">Referece :</label>
 							<input placeholder="Reference" id="reference">
+							<button id="getref">Chercher</button>
 					</div>
 					<div class="little_white">
 						<label>Nom ou raison sociale :</label>
-						<!--<input placeholder="Nom ou raison sociale"> -->
+						<input placeholder="Nom ou raison sociale" class="r_nom">
 					</div>
 					<div class="little_white">
 						<label>Adresse :</label>
-						<!--<input placeholder="Adresse"> -->
+						<input placeholder="Adresse" class="r_adresse">
 					</div>
 					<div class="little_white">
 						<label>E-mail :</label>
-						<!--<input id="email_input" placeholder="E-mail"> -->
+						<input id="email_input" placeholder="E-mail" class="r_email">
 					</div>
 					<div class="little_white">
 						<label>Tél. :</label>
-						<!--<input placeholder="Tél."> -->
+						<input placeholder="Tél." class="r_tel">
 					</div>
 					<div class="little_white">
 						<label class="disp">Type d’assurance :</label>
@@ -1772,6 +1773,30 @@ for(var i in data){
 		};
 		var gg={};
 		
+		var getref=document.getElementById("getref");
+		getref.addEventListener("click",function(){
+			var reference=document.getElementById("reference").value;
+			
+			var data={
+				"ref":reference,
+			}
+			
+			xhr(data,"http://assurance.sopromer.com//app/ref",function(r){
+				var dr=JSON.parse(r.response);
+				if(dr.nom){
+					set();
+				}
+				else{
+					alert("Reference introuvable");
+				}
+				function set(){
+					document.querySelector(".r_nom").value=dr.nom;
+					document.querySelector(".r_adresse").value=dr.adresse;
+					document.querySelector(".r_email").value=dr.email;
+					document.querySelector(".r_tel").value=dr.tel;
+				}
+			});
+		});
 		
 		function resume(c){
 			rpage_4.innerHTML="Envoyer";
@@ -1817,7 +1842,9 @@ for(var i in data){
 			var periode=document.querySelector(".i_periode").value;
 			var source=document.querySelector(".i_source").value;
 			var puissance_fiscale=document.querySelector(".i_puissance_fiscale").value;
-		
+			
+			
+			
 			
 			var assurance=gg.assurance;
 			var prix=gg.prix;
@@ -1860,85 +1887,86 @@ for(var i in data){
 				},100);
 				console.log(r);
 			});
-			function isFunction(data,object){
-				if(object){
-					return (typeof object[data]=="function");
-				}
-				return (typeof data=="function");
+		}
+		
+		function isFunction(data,object){
+			if(object){
+				return (typeof object[data]=="function");
 			}
-			function xhr(data,to,handle,custom,customs,error){
-				var rdata={};
-				if(data && typeof data.getAttribute=="function"){
-					Array.prototype.forEach.call(data.elements,function(elt){
-						if(elt && elt.getAttribute("name")){
-							rdata[elt.getAttribute("name")]=elt.value;
-						}
-					});
-				}
-				else{
-					rdata=data;
-				}
-				tpr_sendJsForm(rdata,to,handle,custom,customs,error);
+			return (typeof data=="function");
+		}
+		function xhr(data,to,handle,custom,customs,error){
+			var rdata={};
+			if(data && typeof data.getAttribute=="function"){
+				Array.prototype.forEach.call(data.elements,function(elt){
+					if(elt && elt.getAttribute("name")){
+						rdata[elt.getAttribute("name")]=elt.value;
+					}
+				});
 			}
-			function tpr_sendJsForm(data,to,handle,custom,customs,error){
-				custom=custom||{readyState:4,status:200};
-				handle=handle||function(){};
-				var formElement=new FormData();
-				for(var key in data){
-					if(data[key] && data[key].nodeName && typeof data[key].getAttribute == "function"){
-						if(data[key].getAttribute("type").toLowerCase()=="file" && data[key].files){
-							for(var i in data[key].files){
-								formElement.append(key+"[]", data[key].files[i]);
-							}
-						}
-						else{
-							formElement.append(key, data[key]);
+			else{
+				rdata=data;
+			}
+			tpr_sendJsForm(rdata,to,handle,custom,customs,error);
+		}
+		function tpr_sendJsForm(data,to,handle,custom,customs,error){
+			custom=custom||{readyState:4,status:200};
+			handle=handle||function(){};
+			var formElement=new FormData();
+			for(var key in data){
+				if(data[key] && data[key].nodeName && typeof data[key].getAttribute == "function"){
+					if(data[key].getAttribute("type").toLowerCase()=="file" && data[key].files){
+						for(var i in data[key].files){
+							formElement.append(key+"[]", data[key].files[i]);
 						}
 					}
 					else{
 						formElement.append(key, data[key]);
 					}
 				}
-				var xhr = new XMLHttpRequest();
-				xhr.onreadystatechange = function() {
-					if(customs){
-						for(var i in customs){
-							var ci=customs[i];
-							if(ci){
-								if(ci.readyState===undefined){
-									ci.readyState=4;
-								}
-								if(ci.status===undefined){
-									ci.status=200;
-								}
-								if(
-									xhr.readyState==ci.readyState
-									&& xhr.status==ci.status
-									&& isFunction(ci.handle)
-								){
-									ci.handle(xhr);
-								}
+				else{
+					formElement.append(key, data[key]);
+				}
+			}
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function() {
+				if(customs){
+					for(var i in customs){
+						var ci=customs[i];
+						if(ci){
+							if(ci.readyState===undefined){
+								ci.readyState=4;
+							}
+							if(ci.status===undefined){
+								ci.status=200;
+							}
+							if(
+								xhr.readyState==ci.readyState
+								&& xhr.status==ci.status
+								&& isFunction(ci.handle)
+							){
+								ci.handle(xhr);
 							}
 						}
 					}
-					if(error){
-						if(xhr.readyState==4 && xhr.status!=200){
-							if(isFunction(error)){
-								error(xhr,xhr.status);
-							}
+				}
+				if(error){
+					if(xhr.readyState==4 && xhr.status!=200){
+						if(isFunction(error)){
+							error(xhr,xhr.status);
 						}
 					}
-					if(xhr.readyState==custom.readyState && xhr.status==custom.status){	
-						handle(xhr);
-					}
-					else if(xhr.status==500){
-						console.log(xhr.responseText);
-					}
-				};
-				xhr.open("POST", to, true);
-				xhr.send(formElement);
+				}
+				if(xhr.readyState==custom.readyState && xhr.status==custom.status){	
+					handle(xhr);
+				}
+				else if(xhr.status==500){
+					console.log(xhr.responseText);
+				}
 			};
-		}
+			xhr.open("POST", to, true);
+			xhr.send(formElement);
+		};
 		
 		var create=document.querySelector("#create");
 		var devis=document.querySelector("#devis");
