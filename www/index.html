@@ -1095,7 +1095,7 @@ select option{
 
 					<div class="little_white">
 							<label class="disp">Referece :</label>
-							<input placeholder="Reference" id="reference">
+							<input placeholder="Reference" id="reference" class="r_reference">
 							<button id="getref">Chercher</button>
 					</div>
 					<div class="little_white">
@@ -1125,7 +1125,7 @@ select option{
 					</div>
 					<div class="little_white">
 						<label class="disp">Type de tarif :</label>
-					<select id="typeVehicule">
+					<select id="typeVehicule" class="r_typeVehicule">
 					 <option value="Promenade et Affaire">Promenade et Affaire</option>
 					  <option value="Transport de personne à titre gratuit">Transport de personne à titre gratuit</option>
 					  <option value="Transport de personne à titre payant">Transport de personne à titre payant</option>
@@ -1135,23 +1135,31 @@ select option{
 					</div>
 					<div class="little_white">
 						<label class="disp">Période :</label>
+					<select id="periode" class="r_periode">
+					<option value="3 mois">
+					3 mois</option>
+					<option value="6 mois">
+					6 mois</option>
+					<option value="12 mois">
+					12 mois</option>
+					</select>
 					
 					</div>
 					<div class="little_white">
 						<label class="disp">Source :</label>
-					
+						<input readonly="readonly" class="r_energie"></input>
 					</div>
 					<div class="little_white">
 						<label class="disp">Puissance fiscale :</label>
-					
+						<input readonly="readonly" class="r_puissance_fiscale"></input>
 					</div>
 					<div class="little_white">
 							<label class="disp">Début du contrat :</label>
-							<input placeholder="Début du contrat" id="debut_contra">
+							<input placeholder="Début du contrat" id="debut_contra" class="r_debut_contra">
 					</div>
 					<div class="little_white">
 							<label class="disp">Assurance</label>
-							<select id="assurance_name">
+							<select id="assurance_name" class="r_assurance">
 								<option value="Ny Havana">Ny Havana</option>
 								<option value="Allianz">Allianz</option>
 								<option value="Aro">Aro</option>
@@ -1160,7 +1168,7 @@ select option{
 							</select>
 					</div>
 
-<div class="little_white r_button" id="rpage_1">&lt; Retour</div><div class="little_white n_button " id="devis">
+<div class="little_white r_button" id="rpage_1">&lt; Retour</div><div class="little_white n_button " id="devis_r">
 						Devis &gt;
 					</div>
 				</div>
@@ -1790,6 +1798,12 @@ for(var i in data){
 					alert("Reference introuvable");
 				}
 				function set(){
+					
+					document.querySelector(".r_typeVehicule").value=dr.type_tarif;
+					document.querySelector(".r_periode").value=dr.periode;
+					document.querySelector(".r_energie").value=dr.source;
+					document.querySelector(".r_puissance_fiscale").value=dr.puissance_fiscale;
+					
 					document.querySelector(".r_nom").value=dr.nom;
 					document.querySelector(".r_adresse").value=dr.adresse;
 					document.querySelector(".r_email").value=dr.email;
@@ -1970,6 +1984,7 @@ for(var i in data){
 		
 		var create=document.querySelector("#create");
 		var devis=document.querySelector("#devis");
+		var devis_r=document.querySelector("#devis_r");
 		var renouv=document.querySelector("#renouv");
 		
 		var rpage_2=document.querySelectorAll("#rpage_2");
@@ -1994,6 +2009,10 @@ for(var i in data){
 			drawTable();
 			open("step_3");
 		});
+		devis_r.addEventListener("click",function(){
+			drawTableR();
+			open("step_3");
+		});
 		evs(rpage_2,"click",function(){
 			open("step_2");
 		});
@@ -2016,6 +2035,38 @@ for(var i in data){
 			var puissance=document.querySelector("#puissance").value;
 			var periode=document.querySelector("#periode").value;
 			var tv=document.querySelector("#typeVehicule").value;
+			
+			if(rdata[energie]){
+				if(rdata[energie][puissance]){
+					if(rdata[energie][puissance][tv]){
+						gdata={
+							"prix":"",
+							"periode":periode,
+							"puissance":puissance,
+							"energie":energie,
+							"tv":tv,
+						}
+						console.log(rdata[energie][puissance][tv]);
+						setEnergie("Ny Havana",rdata[energie][puissance][tv]["Ny Havana"]);
+						setEnergie("Allianz",rdata[energie][puissance][tv]["Allianz"]);
+						setEnergie("Aro",rdata[energie][puissance][tv]["Aro"]);
+						setEnergie("Saham",rdata[energie][puissance][tv]["Saham"]);
+						setEnergie("MAMA",rdata[energie][puissance][tv]["MAMA"]);
+						return true;
+					}
+				}
+			}
+			setEnergie("Ny Havana");
+			setEnergie("Allianz");
+			setEnergie("Aro");
+			setEnergie("Saham");
+			setEnergie("MAMA");
+		}
+		function drawTableR(){
+			var energie=document.querySelector(".r_energie").value;
+			var puissance=document.querySelector(".r_puissance_fiscale").value;
+			var periode=document.querySelector(".r_periode").value;
+			var tv=document.querySelector(".r_typeVehicule").value;
 			
 			if(rdata[energie]){
 				if(rdata[energie][puissance]){
