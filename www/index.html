@@ -33,7 +33,7 @@ ul{
   padding:30px;
 }
 .page *{
-  padding-top:5px;
+  padding-top:1px;
   padding-bottom:5px;
 }
 *{
@@ -44,7 +44,6 @@ ul{
   font-weight:bolder;
   font-size:40px;
   padding: 0px;
-  margin: 20px;
 }
 .normal_dark{
   color:#000;
@@ -104,12 +103,12 @@ ul{
 
 
 .header_part{
-	background-color: #000;
+	background-color: #e0e0e0;
     text-align: center;
     height: 17px;
     display: block;
     padding: 0px;
-    margin-bottom: 34px;
+    margin-bottom: 25px;
 
 }
 .header_step{
@@ -118,7 +117,7 @@ ul{
     font-weight: bold;
     display: inline-block;
     width: 100px;
-    height: 43px;
+    height: 40px;
 
 }
 
@@ -182,6 +181,8 @@ ul{
 .noir_inside{
   color:#000;
 }
+
+.pointer {cursor: pointer;}
 .little_white label{
   display: inline-block;
   width: 250px;
@@ -247,13 +248,97 @@ margin:2px;
   background-image: url("http://assurance.sopromer.com//assets/blue_right.png");
 }
 
+
 @media screen and (max-width:500px){
   .blue_bg{
   width: 100%;
   position: relative;
+  overflow: hidden !important;
 }
 
+	.img1{
+		width: 22%;
+	}
+	.img2{
+		width: 60%;
+	}
+	.footer{
+		position: relative;
+		left: 10% !important;
+	}
 }
+
+@media screen and (max-width:1100px){
+	.page{
+	  width: 93% !important;
+	}	  
+	.pc{
+		display:none;
+	}
+	.mobile{
+		display:block;
+	}
+	.mobile table{
+		width: 90%;
+	}
+}
+
+
+@media screen and (max-width:1100px){
+.input_group,input{
+	font-size:10px;
+}
+}
+
+@media screen and (max-width:500px){
+	.recap1{
+		padding:10px;
+		box-sizing:border-box;
+	  background-color: white;
+	  position: relative;
+	  width: 90%;
+	  min-height: 200px;
+	  margin-left: 20px;
+	  display: inline-block;
+	  vertical-align: top;
+	  font-size: 10px;
+	  overflow: hidden !important;
+	}
+	.payement{
+	  position: relative;
+	  width: 90%;
+	  min-height: 200px;
+	  display: inline-block;
+	  vertical-align: top;
+	  font-weight: bold;
+	}
+	.little_white.r_button1{
+		font-size: 15px !important;
+		right: -40px !important;
+	}
+	.normal_white{
+		font-size: 15px !important;
+	}
+
+	.page * {
+	    padding-top: 1px !important;
+	    padding-bottom: 0px !important;
+	}
+
+	.header_step{
+		height: 29px !important;
+	}
+	.header_part{
+		height: 12px !important;
+	}
+	.big_blue{
+		margin-bottom: -3px !important;
+		margin: 4px !important;
+	}
+}
+
+
+
 .content{
 position: relative;
 height: 60%;
@@ -299,6 +384,11 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 width: 142px;
 text-align: center;
 }
+
+.little_white1{
+
+}
+
 .little_white.n_button1{
 
 cursor:pointer;
@@ -318,33 +408,13 @@ text-align: center;
 .mobile{
 	display:none;
 }
-@media screen and (max-width:1100px){
-	.page{
-	  width: 93% !important;
-	}	  
-	.pc{
-		display:none;
-	}
-	.mobile{
-		display:block;
-	}
-	.mobile table{
-		width: 90%;
-	}
-}
-
-
-@media screen and (max-width:1100px){
-.input_group,input{
-	font-size:10px;
-}
 
 .nav .menu{
   display:none;
 }
 .big_blue {
     font-size: 28px;
-  margin: 0px;
+  margin: 8px !important;
 }
 
 .little_white label{
@@ -356,12 +426,28 @@ text-align: center;
 
 .little_white.r_button{
  padding: 3px !important;
-font-size: 25px;
+font-size: 20px;
 background-color: #ec008c;
 display: inline-block;
 margin: 5px;
 position: relative;
 right: -4px;
+bottom: 1px;
+padding:4px !important;
+border-radius: 2px;
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+width:142px;
+text-align:center;
+}
+
+.little_white.r_button1{
+ padding: 3px !important;
+font-size: 20px;
+background-color: #ec008c;;
+display: inline-block;
+margin: 5px;
+position: relative;
+right: -81px;
 bottom: 1px;
 padding:4px !important;
 border-radius: 2px;
@@ -414,31 +500,7 @@ text-align: center;
   font-weight: bold;
 }
 
-@media screen and (max-width:500px){
-.recap1{
-	padding:10px;
-	box-sizing:border-box;
-  background-color: white;
-  position: relative;
-  width: 90%;
-  min-height: 200px;
-  margin-left: 20px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 10px;
-  overflow: hidden !important;
-}
-.payement{
-  position: relative;
-  width: 90%;
-  min-height: 200px;
-  display: inline-block;
-  vertical-align: top;
-  font-weight: bold;
-}
 
-
-}
 
 .xlabel{
 	display:inline-block;
@@ -449,7 +511,8 @@ text-align: center;
 	overflow:auto;
 }
 .navbar-default {
-    border-color: #FFF!important;
+    border-color: #e0e0e0 !important;
+    margin: 0px !important;
 
 }
 .navbar-nav{
@@ -522,7 +585,7 @@ select option{
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>                        
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="http://assurance.sopromer.com//assets/icone.png"></a>
+	      <a class="navbar-brand" href="#"><img class=" img2"src="http://assurance.sopromer.com//assets/icone.png"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
@@ -556,29 +619,35 @@ select option{
 		
 		<div class="header_part">
 		<div class="header_step">ETAPE 1</div>
-	</div>
-
+		</div>
 		<div class="present_in" style="position: relative;">
 			<div class="blue_bg">
 				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px;padding-bottom: 0px;width: 80%;overflow: hidden;"><img src="http://assurance.sopromer.com//assets/bg1.png" style="padding-top: 0px;min-width: 100%;height: 100%;min-width: 500px;"></div><div class="big_blue">Assurance auto</div>
-				<div class="normal_white">Obtenez votre devis</div>
+				
+				<div class="normal_white " ><span class="no"> </span>Renouvellement</div>
+				<div class="little_white">Renouvellez votre assurance avec seulement votre numero de police</div>
+				
+				<div class="normal_white " ><span class="no"> </span>Création</div>
 
-				<div class="normal_blue" id="renouv"><span class="no"> </span>Renouvellement</div>
-				<div class="little_white">Num police d’assurance</div>
+				<div class="little_white">Besoin d'une assurance, obtenez votre devis en quelques étapes</div>
+				<br>
+				<div class="little_white r_button1 pointer" id="renouv"> Renouveller </div>
 
-				<div class="normal_blue" id="create"><span class="no"> </span>Création</div>
+				<div class="little_white r_button1 pointer" id="create"> Créer </div>
+
+
 			</div>
 			
 		</div>
 
 		<div class="footer">
-			<img src="http://assurance.sopromer.com//assets/icoAro.png">
-			<img src="http://assurance.sopromer.com//assets/icoMama.png">
-			<img src="http://assurance.sopromer.com//assets/icoSaham.png">
-			<img src="http://assurance.sopromer.com//assets/icoAllianz.png">
-			<img src="http://assurance.sopromer.com//assets/icoHavana.png">
-			<br><br>
-			<span class="little_white r_button" id="verif_assur">VERIFIER</span>
+
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoAro.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoMama.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoSaham.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoAllianz.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoHavana.png">
+
 		</div>
 	</div>
 </div>
@@ -597,7 +666,7 @@ select option{
 	<div class="content">
 
 		<div class="nav">
-			<div class="icone"><img src="http://assurance.sopromer.com//assets/icone.png"></div>
+			<div class="icone"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></div>
 			<div class="menu">
 				<ul>
 					<li>Assurance auto</li>
@@ -636,7 +705,7 @@ select option{
 					<br/>
 					<br/>
 					
-<div class="little_white r_button" id="rpage_1">&lt; Retour</div>
+<div class="little_white r_button pointer" id="rpage_1">&lt; Retour</div>
 				</div>
 			</div>
 			
@@ -653,9 +722,12 @@ select option{
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	        <span class="icon-bar"></span> 
+	        <span class="icon-bar"></span> 
 	        <span class="icon-bar"></span>                        
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="http://assurance.sopromer.com//assets/icone.png"></a>
+	      <a class="navbar-brand" href="#"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
@@ -724,7 +796,7 @@ select option{
 					<div class="little_white">
 						<label>Tél. :</label>
 						<input placeholder="Tél." class="i_tel noir_inside" id="tel">
-						
+					</div>	
 					<div class="little_white n_button1 " id="infoAuto">
 						<input type="hidden" name="id_type_assurance" class="id_type_assurance" id="id_type_assurance" value="2">
 						Assurance Auto &gt;
@@ -738,7 +810,7 @@ select option{
 						Assurance Santé &gt;
 					</div>
 					
-<div class="little_white r_button" id="rpage_1">&lt; Retour</div>
+<div class="little_white r_button pointer" id="rpage_1">&lt; Retour</div>
 				</div>
 			</div>
 			
@@ -949,16 +1021,13 @@ select option{
 
 
 
-					<div class="little_white n_button " id="devis">
+					<div class="little_white n_button pointer " id="devis">
 						Devis &gt;
 					</div>
 
-					<div class="little_white r_button" id="rpage_2">&lt; Retour</div>
+					<div class="little_white r_button pointer" id="rpage_2">&lt; Retour</div>
 
 
-
-
-		<div class="bg_img"><img src="http://assurance.sopromer.com/" alt=""></div>
 	</div>
 </div>
 </div>
@@ -975,7 +1044,7 @@ select option{
 	<div class="content">
 
 		<div class="nav">
-			<div class="icone"><img src="http://assurance.sopromer.com//assets/icone.png"></div>
+			<div class="icone"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></div>
 			<div class="menu">
 				<ul>
 					<li>Assurance auto</li>
@@ -1068,7 +1137,7 @@ select option{
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>                        
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="http://assurance.sopromer.com//assets/icone.png"></a>
+	      <a class="navbar-brand" href="#"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
@@ -1185,19 +1254,19 @@ select option{
 							<td>
 								Choisir
 							</td>
-							<td class="choix_Ny_Havana" data-assurance="Ny Havana">
+							<td class="choix_Ny_Havana pointer" data-assurance="Ny Havana">
 								<b>choisir</b>
 							</td>
-							<td class="choix_Allianz" data-assurance="Allianz">
+							<td class="choix_Allianz pointer" data-assurance="Allianz">
 								<b>choisir</b>
 							</td>
-							<td class="choix_Aro" data-assurance="Aro">
+							<td class="choix_Aro pointer" data-assurance="Aro">
 								<b>choisir</b>
 							</td>
-							<td class="choix_Saham" data-assurance="Saham">
+							<td class="choix_Saham pointer" data-assurance="Saham">
 								<b>choisir</b>
 							</td>
-							<td class="choix_MAMA" data-assurance="MAMA">
+							<td class="choix_MAMA pointer" data-assurance="MAMA">
 								<b>choisir</b>
 							</td>
 						</tr>
@@ -1243,7 +1312,7 @@ select option{
 								Choisir
 							</td>
 							<td>
-								<b class="choix_Ny_Havana" data-assurance="Ny Havana">choisir</b>
+								<b class="choix_Ny_Havana pointer" data-assurance="Ny Havana">choisir</b>
 							</td>
 						</tr>
 					</tbody>
@@ -1285,7 +1354,7 @@ select option{
 								Choisir
 							</td>
 							<td>
-								<b class="choix_Allianz" data-assurance="Allianz">choisir</b>
+								<b class="choix_Allianz pointer" data-assurance="Allianz">choisir</b>
 							</td>
 						</tr>
 					</tbody>
@@ -1327,7 +1396,7 @@ select option{
 								Choisir
 							</td>
 							<td>
-								<b class="choix_Aro" data-assurance="Aro">choisir</b>
+								<b class="choix_Aro pointer" data-assurance="Aro">choisir</b>
 							</td>
 						</tr>
 					</tbody>
@@ -1369,7 +1438,7 @@ select option{
 								Choisir
 							</td>
 							<td>
-								<b class="choix_Saham" data-assurance="Saham">choisir</b>
+								<b class="choix_Saham pointer" data-assurance="Saham">choisir</b>
 							</td>
 						</tr>
 					</tbody>
@@ -1411,13 +1480,13 @@ select option{
 								Choisir
 							</td>
 							<td>
-								<b class="choix_MAMA" data-assurance="MAMA">choisir</b>
+								<b class="choix_MAMA pointer" data-assurance="MAMA">choisir</b>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 				
-				<div class="little_white r_button spl" id="rpage_2Auto">&lt; Retour</div>
+				<div class="little_white r_button spl pointer" id="rpage_2Auto">&lt; Retour</div>
 			</div>
 		</div>
 		<div class="bg_img"><img src="http://assurance.sopromer.com/" alt=""></div>
@@ -1473,7 +1542,7 @@ select option{
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>                        
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="http://assurance.sopromer.com//assets/icone.png"></a>
+	      <a class="navbar-brand" href="#"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
@@ -1528,9 +1597,8 @@ select option{
           <div class="little_white " id="2">Renouvellement automatique: </div>
         </div>
       </div>
-	<div class="little_white r_button spl" id="rpage_4">&gt; Valider</div>
-	<div class="little_white r_button spl" id="rpage_3">&lt; Retour</div>
-      <div class="bg_img"><img src="http://assurance.sopromer.com/" alt=""></div>
+	<div class="little_white r_button spl  pointer" id="rpage_4">&gt; Valider</div>
+	<div class="little_white r_button spl pointer" id="rpage_3">&lt; Retour</div>
     </div>
   </div>
 
@@ -1609,7 +1677,7 @@ select option{
 	<div class="content">
 
 		<div class="nav">
-			<div class="icone"><img src="http://assurance.sopromer.com//assets/icone.png"></div>
+			<div class="icone"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></div>
 			<div class="menu">
 				<ul>
 					<li>Assurance auto</li>
@@ -2315,10 +2383,10 @@ for(var i in data){
 			}
 		});
 		
-		var verif_assur=document.querySelector("#verif_assur");
-		verif_assur.addEventListener("click",function(){
-			open("verif_assurrance");
-		});
+		// var verif_assur=document.querySelector("#verif_assur");
+		// verif_assur.addEventListener("click",function(){
+		// 	open("verif_assurrance");
+		// });
 		
 		
 		
