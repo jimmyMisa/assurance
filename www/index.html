@@ -227,7 +227,6 @@ margin:2px;
 }
 .page{
   height: 100%;
-  
   position: relative;
   overflow-x: hidden;
 }
@@ -247,9 +246,8 @@ margin:2px;
 }
 .content{
 	position: relative;
-    height: 60% !important;
+    height: 70% !important;
     width: 100% !important;
-
 }
 
 .page{
@@ -327,6 +325,11 @@ text-align:center;
 	display:none;
 }
 @media screen and (max-width:500px){
+	#mg_ctn{
+		width: 100% !important;
+   		overflow: hidden !important;
+
+	}
 	.page{
 		height: 100%;
 		position: relative;
@@ -346,6 +349,9 @@ text-align:center;
 
 
 @media screen and (max-width:500px){
+	.page{
+		overflow-x:hidden !important; 
+	}
 	.little_white.r_button1{
 		font-size: 15px !important;
 		position: relative;
@@ -353,7 +359,8 @@ text-align:center;
 	}
 		.blue_bg{
 	  width: 100%;
-	  position: relative;
+	  position: relativmge;
+	  overflow: hidden !important;
 	}
 	.input_group,input{
 		font-size:12px;
@@ -500,7 +507,6 @@ text-align:center;
     left: 5px !important;
 
 }
-
 .navbar-nav{
 	padding-left: 12%;
 }
@@ -508,6 +514,7 @@ text-align:center;
 	width: 60px;
 	height: 60px;
 }
+
 .pointer {cursor: pointer;}
 select,
 select option{
@@ -619,9 +626,9 @@ select option{
 
 				<div class="little_white">Besoin d'une assurance, obtenez votre devis en quelques étapes</div>
 				<br>
-				<div class="little_white r_button1 pointer" id="renouv"> Renouveller </div>
 
 				<div class="little_white r_button1 pointer" id="create"> Créer </div>
+				<div class="little_white r_button1 pointer" id="renouv"> Renouveller </div>
 
 
 			</div>
@@ -852,7 +859,7 @@ select option{
 		<div class="present_in">
 			<div class="blue_bg page_add">
 
-				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px !important;padding-bottom: 0px !important;width: 80%;overflow: hidden;"><img style="padding-top: 0px;min-width: 100%;height: 80%;width: 100%;min-width: 500px;" src="http://assurance.sopromer.com//assets/bg2.png"></div><div style="position: relative;
+				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px !important;padding-bottom: 0px !important;width: 80%;overflow: hidden;"><img style="padding-top: 0px;min-width: 100%;height: 60%;width: 100%;min-width: 500px;" src="http://assurance.sopromer.com//assets/bg2.png"></div><div style="position: relative;
 							z-index: 10;">
 
 
@@ -1157,7 +1164,7 @@ select option{
 		<div class="header_step">ETAPE 3</div>
 	</div>
 
-		<div class="present_in" style="left:10% !important;">
+		<div class="present_in" style=" ">
 			<div class="light_blue_bg pc">
 				<div class="big_blue">Comparatif</div>
 				<table>
