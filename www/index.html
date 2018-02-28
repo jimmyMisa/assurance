@@ -34,7 +34,7 @@ ul{
 }
 .page *{
   padding-top:1px;
-  padding-bottom:5px;
+  padding-bottom:0px;
 }
 *{
   font-size:17px;
@@ -44,6 +44,7 @@ ul{
   font-weight:bolder;
   font-size:40px;
   padding: 0px;
+  margin: 20px;
 }
 .normal_dark{
   color:#000;
@@ -181,8 +182,6 @@ ul{
 .noir_inside{
   color:#000;
 }
-
-.pointer {cursor: pointer;}
 .little_white label{
   display: inline-block;
   width: 250px;
@@ -227,7 +226,7 @@ border-right: 0px;
 margin:2px;
 }
 .page{
-  height: 90%;
+  height: 100%;
   
   position: relative;
   overflow: auto;
@@ -247,98 +246,6 @@ margin:2px;
   background-size: 100% 100%;
   background-image: url("http://assurance.sopromer.com//assets/blue_right.png");
 }
-
-
-@media screen and (max-width:500px){
-  .blue_bg{
-  width: 100%;
-  position: relative;
-  overflow: hidden !important;
-}
-
-	.img1{
-		width: 22%;
-	}
-	.img2{
-		width: 60%;
-	}
-	.footer{
-		position: relative;
-		left: 10% !important;
-	}
-}
-
-@media screen and (max-width:1100px){
-	.page{
-	  width: 93% !important;
-	}	  
-	.pc{
-		display:none;
-	}
-	.mobile{
-		display:block;
-	}
-	.mobile table{
-		width: 90%;
-	}
-}
-
-
-@media screen and (max-width:1100px){
-.input_group,input{
-	font-size:10px;
-}
-}
-
-@media screen and (max-width:500px){
-	.recap1{
-		padding:10px;
-		box-sizing:border-box;
-	  background-color: white;
-	  position: relative;
-	  width: 90%;
-	  min-height: 200px;
-	  margin-left: 20px;
-	  display: inline-block;
-	  vertical-align: top;
-	  font-size: 10px;
-	  overflow: hidden !important;
-	}
-	.payement{
-	  position: relative;
-	  width: 90%;
-	  min-height: 200px;
-	  display: inline-block;
-	  vertical-align: top;
-	  font-weight: bold;
-	}
-	.little_white.r_button1{
-		font-size: 15px !important;
-		right: -40px !important;
-	}
-	.normal_white{
-		font-size: 15px !important;
-	}
-
-	.page * {
-	    padding-top: 1px !important;
-	    padding-bottom: 0px !important;
-	}
-
-	.header_step{
-		height: 29px !important;
-	}
-	.header_part{
-		height: 12px !important;
-	}
-	.big_blue{
-		margin-bottom: -3px !important;
-		margin: 4px !important;
-	}
-}
-
-
-
 .content{
 position: relative;
 height: 60%;
@@ -352,7 +259,6 @@ height: 60%;
 }
 .little_white.r_button{
 
-
 cursor:pointer;
 display: inline-block;
 margin: 5px;
@@ -360,7 +266,7 @@ position: absolute;
 right: -53%;
 bottom: -21px;
 font-size: 25px;
-background-color: #ec008c;
+background-color: #2e3192;
 display: inline-block;
  padding: 3px !important;
 border-radius: 2px;
@@ -384,11 +290,6 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 width: 142px;
 text-align: center;
 }
-
-.little_white1{
-
-}
-
 .little_white.n_button1{
 
 cursor:pointer;
@@ -400,44 +301,6 @@ border-radius: 2px;
 box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 width: 142px;
 text-align: center;
-}
-
-.pc{
-	display:block;
-}
-.mobile{
-	display:none;
-}
-
-.nav .menu{
-  display:none;
-}
-.big_blue {
-    font-size: 28px;
-  margin: 8px !important;
-}
-
-.little_white label{
-	display:none;
-}
-.little_white label.disp{
-	display:block;
-}
-
-.little_white.r_button{
- padding: 3px !important;
-font-size: 20px;
-background-color: #ec008c;
-display: inline-block;
-margin: 5px;
-position: relative;
-right: -4px;
-bottom: 1px;
-padding:4px !important;
-border-radius: 2px;
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-width:142px;
-text-align:center;
 }
 
 .little_white.r_button1{
@@ -455,22 +318,90 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 width:142px;
 text-align:center;
 }
-.little_white.n_button{
-padding: 4px !important;
-padding-top: 20px;
-padding-bottom: 20px;
-font-size: 25px;
-background-color: #ec008c;
-display: inline-block;
-margin: 10px;
-position: relative;
-right: 0px;
-bottom: 0px;
-border-radius: 2px;
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-width: 142px;
-text-align: center;
+
+.pc{
+	display:block;
 }
+.mobile{
+	display:none;
+}
+@media screen and (max-width:1100px){
+	.page{
+	  width: 96% !important;
+	}	  
+	.pc{
+		display:none;
+	}
+	.mobile{
+		display:block;
+	}
+	.mobile table{
+		width: 90%;
+	}
+}
+
+
+@media screen and (max-width:1100px){
+	.little_white.r_button1{
+		font-size: 15px !important;
+		position: relative;
+		left: 20px !important;
+	}
+		.blue_bg{
+	  width: 100%;
+	  position: relative;
+	  overflow: hidden !important;
+	}
+	.input_group,input{
+		font-size:12px;
+	}
+
+	.nav .menu{
+	  display:none;
+	}
+	.big_blue {
+	    font-size: 30px;
+	  margin: 0px;
+	}
+
+	.little_white label{
+		display:none;
+	}
+	.little_white label.disp{
+		display:block;
+	}
+
+	.little_white.r_button{
+	 padding: 3px !important;
+	font-size: 20px;
+	background-color: #2e3192;
+	display: inline-block;
+	margin: 5px;
+	position: relative;
+	right: -4px;
+	bottom: 1px;
+	padding:4px !important;
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+	width:142px;
+	text-align:center;
+	}
+	.little_white.n_button{
+	padding: 4px !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	background-color: #ec008c;
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+	width: 142px;
+	text-align: center;
+	}
 
 }
 .spl{
@@ -500,6 +431,52 @@ text-align: center;
   font-weight: bold;
 }
 
+@media screen and (max-width:500px){
+.recap1{
+	padding:10px;
+	box-sizing:border-box;
+  background-color: white;
+  position: relative;
+  width: 90%;
+  min-height: 200px;
+  margin-left: 2px;
+  vertical-align: top;
+}
+.payement{
+	position: relative;
+    left: -21px !important;
+    width: 90%;
+    min-height: 200px;
+    vertical-align: top;
+    font-weight: bold;
+    top: 17px !important;
+
+}
+.img1{
+		width: 22%;
+	}
+	.img2{
+		width: 60%;
+	}
+	.footer{
+		position: relative;
+		left: 10% !important;
+	}
+
+.header_step{
+		height: 29px !important;
+	}
+	.header_part{
+		height: 12px !important;
+	}
+
+.little_white label.disp{
+	font-size: 15px !important;
+}
+
+
+}
+
 
 
 .xlabel{
@@ -513,8 +490,12 @@ text-align: center;
 .navbar-default {
     border-color: #e0e0e0 !important;
     margin: 0px !important;
+    padding: 0px !important;
+    position: relative;
+    left: 5px !important;
 
 }
+
 .navbar-nav{
 	padding-left: 12%;
 }
@@ -522,6 +503,7 @@ text-align: center;
 	width: 60px;
 	height: 60px;
 }
+.pointer {cursor: pointer;}
 select,
 select option{
 	background-color:#FFF;
@@ -585,7 +567,7 @@ select option{
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>                        
 	      </button>
-	      <a class="navbar-brand" href="#"><img class=" img2"src="http://assurance.sopromer.com//assets/icone.png"></a>
+	      <a class="navbar-brand" href="#"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
@@ -619,10 +601,11 @@ select option{
 		
 		<div class="header_part">
 		<div class="header_step">ETAPE 1</div>
-		</div>
+	</div>
+
 		<div class="present_in" style="position: relative;">
 			<div class="blue_bg">
-				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px;padding-bottom: 0px;width: 80%;overflow: hidden;"><img src="http://assurance.sopromer.com//assets/bg1.png" style="padding-top: 0px;min-width: 100%;height: 100%;min-width: 500px;"></div><div class="big_blue">Assurance auto</div>
+				<div class="bg_img" style="position: absolute;top: 0;z-index: 0;left: 100%;height: 100%;padding-top: 0px;padding-bottom: 0px;width: 100%;overflow: hidden;"><img src="http://assurance.sopromer.com//assets/bg1.png" style="padding-top: 0px;min-width: 100%;height: 100%;min-width: 500px;"></div><div class="big_blue">Assurance auto</div>
 				
 				<div class="normal_white " ><span class="no"> </span>Renouvellement</div>
 				<div class="little_white">Renouvellez votre assurance avec seulement votre numero de police</div>
@@ -641,17 +624,14 @@ select option{
 		</div>
 
 		<div class="footer">
-
 			<img class="img1" src="http://assurance.sopromer.com//assets/icoAro.png">
 			<img class="img1" src="http://assurance.sopromer.com//assets/icoMama.png">
 			<img class="img1" src="http://assurance.sopromer.com//assets/icoSaham.png">
 			<img class="img1" src="http://assurance.sopromer.com//assets/icoAllianz.png">
 			<img class="img1" src="http://assurance.sopromer.com//assets/icoHavana.png">
-
 		</div>
 	</div>
 </div>
-
 
 
 
@@ -666,7 +646,7 @@ select option{
 	<div class="content">
 
 		<div class="nav">
-			<div class="icone"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></div>
+			<div class="icone"><img src="http://assurance.sopromer.com//assets/icone.png"></div>
 			<div class="menu">
 				<ul>
 					<li>Assurance auto</li>
@@ -711,7 +691,7 @@ select option{
 			
 		</div>
 	</div>
-</div>
+</div> 
 
 
 <div class="page display" id="step_2">
@@ -722,9 +702,6 @@ select option{
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span> 
-	        <span class="icon-bar"></span> 
-	        <span class="icon-bar"></span> 
 	        <span class="icon-bar"></span>                        
 	      </button>
 	      <a class="navbar-brand" href="#"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></a>
@@ -796,7 +773,7 @@ select option{
 					<div class="little_white">
 						<label>Tél. :</label>
 						<input placeholder="Tél." class="i_tel noir_inside" id="tel">
-					</div>	
+						
 					<div class="little_white n_button1 " id="infoAuto">
 						<input type="hidden" name="id_type_assurance" class="id_type_assurance" id="id_type_assurance" value="2">
 						Assurance Auto &gt;
@@ -831,7 +808,7 @@ select option{
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>                        
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="http://assurance.sopromer.com//assets/icone.png"></a>
+	      <a class="navbar-brand" href="#"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
@@ -878,7 +855,7 @@ select option{
 
 					<div class="big_blue">Création</div>
 					<div class="little_white">
-							<label class="disp">Début du contrat :</label>
+							<label >Début du contrat :</label>
 							<input placeholder="Début du contrat" id="debut_contra" class="r_debut_contra noir_inside">
 					</div>
 					<div class="little_white">
@@ -1021,13 +998,15 @@ select option{
 
 
 
-					<div class="little_white n_button pointer " id="devis">
+					<div class="little_white r_button pointer" id="rpage_2">&lt; Retour</div>
+					<div class="little_white n_button  pointer" id="devis">
 						Devis &gt;
 					</div>
 
-					<div class="little_white r_button pointer" id="rpage_2">&lt; Retour</div>
 
 
+
+		<div class="bg_img"><img src="http://assurance.sopromer.com/" alt=""></div>
 	</div>
 </div>
 </div>
@@ -1044,7 +1023,7 @@ select option{
 	<div class="content">
 
 		<div class="nav">
-			<div class="icone"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></div>
+			<div class="icone"><img src="http://assurance.sopromer.com//assets/icone.png"></div>
 			<div class="menu">
 				<ul>
 					<li>Assurance auto</li>
@@ -1116,11 +1095,10 @@ select option{
 					</select>
 					</div>
 		
-					<div class="little_white n_button" id="devis">
+					<div class="little_white r_button pointer" id="step_2Sante">&lt; Retour</div>
+					<div class="little_white n_button pointer" id="devis">
 						Devis &gt;
 					</div>
-
-					<div class="little_white r_button" id="step_2Sante">&lt; Retour</div>
 		<div class="bg_img"><img src="http://assurance.sopromer.com/" alt=""></div>
 	</div>
 </div>
@@ -1257,7 +1235,7 @@ select option{
 							<td class="choix_Ny_Havana pointer" data-assurance="Ny Havana">
 								<b>choisir</b>
 							</td>
-							<td class="choix_Allianz pointer" data-assurance="Allianz">
+							<td class="choix_Allianz pointer " data-assurance="Allianz">
 								<b>choisir</b>
 							</td>
 							<td class="choix_Aro pointer" data-assurance="Aro">
@@ -1272,7 +1250,7 @@ select option{
 						</tr>
 					</tbody>
 				</table>
-				<div class="little_white r_button spl" id="rpage_2">&lt; Retour</div>
+				<div class="little_white r_button spl pointer" id="rpage_2">&lt; Retour</div>
 			</div>
 			<div class="light_blue_bg mobile">
 				<div class="big_blue">Comparatif</div>
@@ -1283,7 +1261,7 @@ select option{
 								Num. :
 							</th>
 							<th>
-								<img src="http://assurance.sopromer.com//assets/icoHavana.png">
+								<img src="http://assurance.sopromer.com//assets/icoNy Havana.png">
 							</th>
 						</tr>
 					</thead>
@@ -1594,11 +1572,21 @@ select option{
             <a href="#"><img  class="bank" src="http://assurance.sopromer.com//assets/assets/orange.jpg" /></a>
            <br> Via Paypal<br>
           </div>
-          <div class="little_white " id="2">Renouvellement automatique: </div>
+          <br> <br>
         </div>
       </div>
-	<div class="little_white r_button spl  pointer" id="rpage_4">&gt; Valider</div>
 	<div class="little_white r_button spl pointer" id="rpage_3">&lt; Retour</div>
+	<div class="little_white r_button spl pointer" id="rpage_4"> Valider &gt;</div>
+      <div class="bg_img"><img src="http://assurance.sopromer.com/" alt=""></div>
+
+      <div class="footer">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoAro.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoMama.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoSaham.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoAllianz.png">
+			<img class="img1" src="http://assurance.sopromer.com//assets/icoHavana.png">
+		</div>
+
     </div>
   </div>
 
@@ -1677,7 +1665,7 @@ select option{
 	<div class="content">
 
 		<div class="nav">
-			<div class="icone"><img class=" img2" src="http://assurance.sopromer.com//assets/icone.png"></div>
+			<div class="icone"><img src="http://assurance.sopromer.com//assets/icone.png"></div>
 			<div class="menu">
 				<ul>
 					<li>Assurance auto</li>
@@ -1774,11 +1762,9 @@ select option{
 							</select>
 					</div>
 
-<div class="little_white n_button " id="devis_r">
+<div class="little_white r_button pointer" id="rpage_3">&lt; Retour</div><div class="little_white n_button " id="devis_r">
 						Devis &gt;
 					</div>
-<div class="little_white r_button" id="rpage_3">&lt; Retour</div>
-
 				</div>
 			</div>
 			
