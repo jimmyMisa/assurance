@@ -18,7 +18,7 @@
 */
 html{
 	width: 100%;
-overflow: hidden;
+overflow-x: hidden;
 }
 
 body{
@@ -229,7 +229,6 @@ margin:2px;
   height: 100%;
   
   position: relative;
-  overflow: auto;
   overflow-x: hidden;
 }
 .blue_bg{
@@ -247,8 +246,10 @@ margin:2px;
   background-image: url("http://assurance.sopromer.com//assets/blue_right.png");
 }
 .content{
-position: relative;
-height: 60%;
+	position: relative;
+    height: 60% !important;
+    width: 100% !important;
+
 }
 
 .page{
@@ -325,9 +326,12 @@ text-align:center;
 .mobile{
 	display:none;
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width:500px){
 	.page{
-	  width: 100% !important;
+		height: 100%;
+		position: relative;
+		overflow-x: hidden !important;
+ 
 	}	  
 	.pc{
 		display:none;
@@ -341,7 +345,7 @@ text-align:center;
 }
 
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:500px){
 	.little_white.r_button1{
 		font-size: 15px !important;
 		position: relative;
@@ -350,7 +354,6 @@ text-align:center;
 		.blue_bg{
 	  width: 100%;
 	  position: relative;
-	  overflow: hidden !important;
 	}
 	.input_group,input{
 		font-size:12px;
@@ -360,7 +363,7 @@ text-align:center;
 	  display:none;
 	}
 	.big_blue {
-	    font-size: 30px;
+	    font-size: 25px;
 	  margin: 0px;
 	}
 
@@ -442,6 +445,9 @@ text-align:center;
   margin-left: 2px;
   vertical-align: top;
 }
+.recap1 *{
+	font-size: 15px !important;
+}
 .payement{
 	position: relative;
     left: -21px !important;
@@ -460,7 +466,6 @@ text-align:center;
 	}
 	.footer{
 		position: relative;
-		left: 10% !important;
 	}
 
 .header_step{
